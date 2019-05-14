@@ -11,13 +11,13 @@
 	margin-top: 15px;
 }
 .container{
-	width: 1070px;
-	margin: 0 auto;
+	width: 850px;
+	margin: 0 200px;
 	color: #fff;
 }
 p{
 	text-align: justify;
-	width: 900px;
+	/*width: 900px;*/
 	margin-bottom: 10px;
 }
 ul{
@@ -92,4 +92,16 @@ img{
 }
 .strike{
 	text-decoration: line-through;
+}
+.bg-indigo{
+	background: indigo;
+	width: 100%;
+}
+.bg-aqua{
+	background-color: rgba(148, 247, 247, .3);
+	color: #000;
+}
+.bg-border{
+	background-color: rgba(244, 113, 66, .7);
+	border-radius: 7px;
 }
