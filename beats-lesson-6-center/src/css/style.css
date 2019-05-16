@@ -1,0 +1,77 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #f6f6f6;
+	font-family: 'Arial';
+}
+h2{
+	font-size: 22.5px;
+	color: #2f2f2f;
+	margin: 24px 5px 4px -33px; /*Новый код*/
+}
+.grey-block{
+	/*padding: 5% 6%;
+	height: 100vh;*/
+	
+
+}
+.white-block{
+	background-color: #fff;
+	border: 1px solid #e4e4e4;
+	width: 1010px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); /*Центрировал*/
+}
+.wrapper{
+	padding: 70px 0 80px 0;
+}
+.beats{
+	display: inline-block;
+	max-width: 45%;
+	vertical-align: middle;
+	padding: 0 0 0 108px;
+}
+.description{
+	display: inline-block;
+	width: 54%;
+	vertical-align: middle;
+	padding: 15px 94px 0 80px;
+}
+.descr{
+	margin-bottom: 59px;
+	margin-top: 28px;       /*Новый код*/
+    margin-left: -30px;     /*Новый код*/
+	max-width: 398px;
+	font-size: 15px;
+	font-weight: normal;
+}
+.price{
+	margin-top: 26px;
+	margin-bottom: 64px;
+	margin-left: -30px;
+	font-size: 30px;
+	font-weight: normal;
+	color: #2f2f2f;
+}
+.price-text{
+	font-size: 15px;
+	font-weight: normal;
+	color: #2f2f2f;
+	margin: -5px 0px -9px -31px;
+}
+.button{
+	padding: 15px 37px;
+	background: #ec744a;
+	color: #fff;
+	border: none;
+	font-size: 18.75px;
+	font-weight: normal;
+	margin: 0px -27px;
+
+}
