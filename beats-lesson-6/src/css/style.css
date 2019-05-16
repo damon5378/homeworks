@@ -11,20 +11,22 @@ body{
 h2{
 	font-size: 22.5px;
 	color: #2f2f2f;
+	margin: 24px 5px 4px -33px; /*Новый код*/
 }
 .grey-block{
-	padding: 84px 94px;
+	padding: 5% 6%;
 	height: 100vh;
 }
 .white-block{
 	background-color: #fff;
+	border: 1px solid #e4e4e4;
 }
 .wrapper{
 	padding: 70px 0 80px 0;
 }
 .beats{
 	display: inline-block;
-	width: 45%;
+	max-width: 45%;
 	vertical-align: middle;
 	padding: 0 0 0 108px;
 }
@@ -36,14 +38,16 @@ h2{
 }
 .descr{
 	margin-bottom: 59px;
-	margin-top: 38px;
-	width: 398px;
+	margin-top: 28px;       /*Новый код*/
+    margin-left: -30px;     /*Новый код*/
+	max-width: 398px;
 	font-size: 15px;
 	font-weight: normal;
 }
 .price{
 	margin-top: 26px;
 	margin-bottom: 64px;
+	margin-left: -30px;
 	font-size: 30px;
 	font-weight: normal;
 	color: #2f2f2f;
@@ -52,12 +56,15 @@ h2{
 	font-size: 15px;
 	font-weight: normal;
 	color: #2f2f2f;
+	margin: -5px 0px -9px -31px;
 }
 .button{
-	padding: 21px 40px;
+	padding: 15px 37px;
 	background: #ec744a;
 	color: #fff;
 	border: none;
 	font-size: 18.75px;
 	font-weight: normal;
+	margin: 0px -27px;
+
 }
