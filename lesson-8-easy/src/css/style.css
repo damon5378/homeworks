@@ -1,0 +1,144 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: sans-serif;
+}
+.container{
+	max-width: 1140px;
+	width: 96%;
+	margin: 0 auto;
+}
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 159px;
+}
+.fa-vk{
+	color: #5281b9;
+}
+.fa-youtube{
+	color: red;
+}
+.fa-instagram{
+	color: grey;
+}
+.brand{
+	color: #95989a;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.social a{
+	text-decoration: none;
+	margin-right: 20px;
+}
+.hero{
+	padding-top: 70px;
+	padding-bottom: 190px;
+	background: #F4F5F7;
+}
+.main{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.main-text{
+	width: 50%;
+}
+.subtitle{
+	display: block;
+	margin-bottom: 15px;
+}
+.subtitle, .title, .description, .price-tag{
+	color: #32325F;
+}
+.subtitle, .description, .price-tag{
+	font-size: 20px;
+}
+.title{
+	font-size: 48px;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 26px;
+}
+.description{
+	line-height: 26px;
+	margin-bottom: 16px;
+}
+.price-tag{
+	display: block;
+	margin-bottom: 31px;
+}
+.price{
+	display: block;
+	font-size: 48px;
+	color: #525F7F;
+	margin-bottom: 50px;
+}
+.btn{
+	padding: 28px 33px;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: sans-serif;
+	text-decoration: none;
+	box-shadow: 0 3px 6px rgba(173, 173, 173, 0.16);
+}
+.btn-success{
+	background: #2DCE89;
+	margin-right: 20px;
+}
+.btn-primary{
+	background: #5E72E4;
+}
+.section{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.wrap{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 99px;
+}
+.block{
+	width: 23%;
+	margin-right: 2%;
+}
+.block-text{
+	font-size: 16px;
+	font-weight: 400;
+	margin: 40px 0;
+	line-height: 1.4;
+}
+.footer{
+	background: #32325F;
+	color: #fff;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.footer-wrap{
+	display: flex;
+	justify-content: space-between;
+}
+.footer-block{
+	width: 33%;
+}
+.footer a{
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.footer p{
+	margin-top: 35px;
+	line-height: 1.4;
+}
+.footer-title{
+	font-size: 24px;
+	font-weight: bold;
+}
