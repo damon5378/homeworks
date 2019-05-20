@@ -14,7 +14,11 @@ body{
 	justify-content: space-between;
 	margin-bottom: 159px;
 }
-.fa-vk{
+.fab{
+	font-size: 20px;
+	filter: grayscale(1);
+}
+/*.fa-vk{
 	color: #5281b9;
 }
 .fa-youtube{
@@ -22,7 +26,7 @@ body{
 }
 .fa-instagram{
 	color: grey;
-}
+}*/
 .brand{
 	color: #95989a;
 	font-size: 20px;
@@ -112,6 +116,7 @@ body{
 	font-weight: 400;
 	margin: 40px 0;
 	line-height: 1.4;
+	color: #525F7F;
 }
 .footer{
 	background: #32325F;
@@ -132,7 +137,6 @@ body{
 	text-decoration: none;
 	font-size: 16px;
 	font-weight: bold;
-	margin-bottom: 10px;
 }
 .footer p{
 	margin-top: 35px;
