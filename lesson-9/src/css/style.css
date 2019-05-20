@@ -1,0 +1,45 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: Tahoma;
+}
+h1{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 24px;
+	padding: 77px 85px;
+}
+/*.block-1{
+	background: url(../img/001-summer.png) no-repeat;
+	height: 77px;
+}
+.block-2{
+	background: url(../img/002-mountains.png) no-repeat;
+	height: 77px;
+}
+.block-3{
+	background: url(../img/003-camping.png) no-repeat;
+	height: 77px;
+}
+.block-4{
+	background: url(../img/004-boarding-pass.png) no-repeat;
+	height: 77px;
+}
+.block-5{
+	background: url(../img/005-forma.png) no-repeat;
+	height: 77px;
+}
+.block-6{
+	background: url(../img/006-forma.png) no-repeat;
+	height: 77px;
+}*/
+p{
+	/*padding-top: 20px;
+	padding-right: 80px;*/
+	text-align: center;
+}
+/*img{
+	padding-left: 10px;
+}*/
