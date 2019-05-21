@@ -1,0 +1,89 @@
+.logo{
+	text-transform: uppercase;
+	color: #95989A;
+	font-size: 20px;
+	padding-top: 20px;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+.hero{
+	background: #F4F5F7;
+	padding-top: 70px;
+	padding-bottom: 190px;
+}
+img{
+	max-width: 100%;
+}
+.social{
+	filter: grayscale(1);
+	font-size: 20px;
+}
+.social a{
+	text-decoration: none;
+	margin-right: 20px;
+}
+.subtitle{
+	font-size: 20px;
+	font-weight: 400;
+	color: #32325F;
+}
+.title{
+	font-size: 48px;
+	font-weight: 700;
+	color: #32325F;
+	margin-top: 28px;
+}
+.price-tag{
+	font-size: 20px;
+	font-weight: 400;
+	color: #32325F;
+}
+.price{
+	font-size: 48px;
+	font-weight: 400;
+	color: #525F7F;
+}
+.description{
+	color: #32325F;
+	font-size: 20px;
+	font-weight: 400;
+}
+.main{
+	margin-top: 100px;
+}
+.section{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.about-block{
+	margin-top: 100px;
+}
+.footer{
+	background: #32325F;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.footer a{
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+}
+.footer p{
+	margin-top: 35px;
+	line-height: 1.4;
+	font-size: 16px;
+	color: #fff;
+	font-weight: bold;
+}
+.footer-title{
+	font-size: 24px;
+	font-weight: bold;
+}
+h4{
+	color: #fff;
+}
+.wrap{
+	display: flex;
+}
