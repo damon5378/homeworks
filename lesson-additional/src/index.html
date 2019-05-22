@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson-10-Bootstrap-Additional</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+<h1 class="d-flex justify-content-center">Header</h1>
+<p class="text-center mw-25">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-4">
+		<div class="card">
+  <h5 class="card-header text-center">Free</h5>
+  <div class="card-body">
+    <h5 class="card-title text-center h3">$ 0</h5>
+    <p class="card-text">10 users included 2 GB of storage Email support Help center access</p>
+    <a href="#" class="btn btn-outline-primary btn-block">Sign up for free</a>
+  </div>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="card">
+  <h5 class="card-header text-center">Pro</h5>
+  <div class="card-body">
+    <h5 class="card-title text-center h3">$15 <span class="text-black-50">/ mo</span></h5>
+    <p class="card-text">20 users included 10 GB of storage Priority email support Help center access</p>
+    <a href="#" class="btn btn-primary btn-block">Get started</a>
+  </div>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="card">
+  <h5 class="card-header text-center">Enterprise</h5>
+  <div class="card-body">
+    <h5 class="card-title text-center h3">$29 <span class="text-black-50">/ mo</span></h5>
+    <p class="card-text">30 users included 15 GB of storage Phone and email support Help center access</p>
+    <a href="#" class="btn btn-primary btn-block">Contact us</a>
+  </div>
+</div>
+</div>
+	</div>
+</div>
+
+<h2 class="text-center">Tables</h2>
+
+<div class="container">
+	<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table table-dark table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<footer class="footer">
+	<div class="wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2">
+					<i class="fas fa-camera"></i>
+					<span class="text-black-50 d-block">&copy; 2017-2018</span>
+				</div>
+				<div class="col-lg-2">
+					<div class="wrap">
+					<h5>Features</h5>
+					<a href="#" class="text-black-50 d-block">Color stuff</a>
+					<a href="#" class="text-black-50 d-block">Random feature</a>
+					<a href="#" class="text-black-50 d-block">Team feature</a>
+					<a href="#" class="text-black-50 d-block">Stuff for developers</a>
+					<a href="#" class="text-black-50 d-block">Another one</a>
+					<a href="#" class="text-black-50 d-block">Last time</a>
+				</div>
+				</div>
+				<div class="col-lg-2">
+					<div class="wrap">
+					<h5>Resources</h5>
+					<a href="#" class="text-black-50 d-block">Resource</a>
+					<a href="#" class="text-black-50 d-block">Resource name</a>
+					<a href="#" class="text-black-50 d-block">Another resource</a>
+					<a href="#" class="text-black-50 d-block">Final resource</a>
+				</div>
+				</div>
+				<div class="col-lg-2">
+					<div class="wrap">
+					<h5>Resources</h5>
+					<a href="#" class="text-black-50 d-block">Business</a>
+					<a href="#" class="text-black-50 d-block">Education</a>
+					<a href="#" class="text-black-50 d-block">Government</a>
+					<a href="#" class="text-black-50 d-block">Gaming</a>
+				</div>
+				</div>
+				<div class="col-lg-2">
+					<div class="wrap">
+					<h5>About</h5>
+					<a href="#" class="text-black-50 d-block">Team</a>
+					<a href="#" class="text-black-50 d-block">Locations</a>
+					<a href="#" class="text-black-50 d-block">Privacy</a>
+					<a href="#" class="text-black-50 d-block">Terms</a>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
