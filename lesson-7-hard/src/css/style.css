@@ -1,0 +1,108 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Tahoma;
+}
+h1{
+	padding-top: 25px;
+	padding-bottom: 28px;
+	font-size: 48px;
+	font-weight: bold;
+}
+h2{
+	padding-bottom: 53px;
+	font-size: 30px;
+	font-weight: normal;
+}
+h3{
+	text-align: center;
+	margin-bottom: 95px;
+	font-family: Tahoma;
+	font-weight: bold;
+	font-size: 30px;
+	color: #333;
+}
+.main{
+	padding-top: 70px;
+	padding-bottom: 100px;
+	height: 100vh;
+}
+.container{
+	max-width: 1092px;
+    display: block;
+    margin: auto;
+}
+.header{
+	display: flex;
+}
+.header img{
+	width: 304px;
+	height: 530px;
+	vertical-align: middle;
+}
+.description{
+	padding-left: 82px;
+	vertical-align: middle;
+}
+.text{
+	padding-bottom: 53px;
+	font-size: 18px;
+}
+.price{
+	padding-bottom: 63px;
+	font-size: 48px;
+	color: #313131;
+}
+.buttons a{
+	text-decoration: none;
+}
+.btn{
+	padding: 27px 43px;
+	border-radius: 7px;
+	font-size: 24px;
+	font-weight: bold;
+}
+.btn-fill{
+	background: #f05a22;
+	color: #fff;
+	margin-right: 40px; /*Столько времени потерял, 
+	пока сюда не вставил это свойство. И в buttons вставлял и в btn-fill и в btn-tr 
+	и сначала паддинги писал. Нету почему-то понимая что и куда*/
+}
+.btn-fill:hover{
+	background: #f54a0b;
+}
+.btn-tr{
+	background: transparent;
+	border: 2px solid #f05a22;
+	color: #f05a22;
+}
+.btn-tr:hover{
+	background: #f54a0b;
+	color: #fff;
+}
+.delivery{
+	padding-top: 95px;
+	background: #f2f2f2;
+}
+.about-delivery{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 105px;
+	margin: 0 auto;
+}
+.about-delivery img{
+	display: block;
+	margin: 0 auto;
+}
+.about-delivery p{
+	color: #333;
+	font-family: Open Sans;
+	font-size: 18px;
+	text-align: center;
+	padding-top: 30px;
+}
