@@ -144,6 +144,7 @@ img {
 .hero-list__image {
   flex-basis: 40px;
   height: 40px;
+  min-width: 40px;
   border: 2px solid #ffd200;
   display: flex;
   justify-content: center;
