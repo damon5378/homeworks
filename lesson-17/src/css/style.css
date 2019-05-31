@@ -335,49 +335,69 @@ img {
   min-height: 70px;
 }
 
+/* line 34, D:/Уроки/COURSE/lesson-17/src/sass/blocks/_offer.sass */
+.offer__phone {
+  display: inline-block;
+  color: #333;
+  font-size: 20px;
+  text-decoration: none;
+  margin-top: 10px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
 @media (max-width: 1200px) {
-  /* line 35, D:/Уроки/COURSE/lesson-17/src/sass/blocks/_offer.sass */
+  /* line 42, D:/Уроки/COURSE/lesson-17/src/sass/blocks/_offer.sass */
   .offer {
     background-size: cover;
   }
-  /* line 37, D:/Уроки/COURSE/lesson-17/src/sass/blocks/_offer.sass */
+  /* line 44, D:/Уроки/COURSE/lesson-17/src/sass/blocks/_offer.sass */
   .offer__input {
     width: 100%;
     margin-bottom: 10px;
   }
-  /* line 40, D:/Уроки/COURSE/lesson-17/src/sass/blocks/_offer.sass */
+  /* line 47, D:/Уроки/COURSE/lesson-17/src/sass/blocks/_offer.sass */
   .offer__button {
     font-size: 13px;
+  }
+  /* line 49, D:/Уроки/COURSE/lesson-17/src/sass/blocks/_offer.sass */
+  .offer__phone {
+    font-size: 12px;
   }
 }
 
 @media (max-width: 768px) {
-  /* line 43, D:/Уроки/COURSE/lesson-17/src/sass/blocks/_offer.sass */
+  /* line 52, D:/Уроки/COURSE/lesson-17/src/sass/blocks/_offer.sass */
   .offer {
     background: #fff;
   }
-  /* line 45, D:/Уроки/COURSE/lesson-17/src/sass/blocks/_offer.sass */
+  /* line 54, D:/Уроки/COURSE/lesson-17/src/sass/blocks/_offer.sass */
   .offer-block {
     width: 100%;
     padding-right: 0;
   }
 }
 
-/* line 48, D:/Уроки/COURSE/lesson-17/src/sass/blocks/_offer.sass */
+/* line 57, D:/Уроки/COURSE/lesson-17/src/sass/blocks/_offer.sass */
 .offer-wrapper-text {
   display: flex;
   margin-top: 35px;
   line-height: 1.5;
 }
 
-/* line 52, D:/Уроки/COURSE/lesson-17/src/sass/blocks/_offer.sass */
+/* line 61, D:/Уроки/COURSE/lesson-17/src/sass/blocks/_offer.sass */
 .offer-text-1 {
   font-size: 15px;
   margin-right: 40px;
 }
 
-/* line 55, D:/Уроки/COURSE/lesson-17/src/sass/blocks/_offer.sass */
+/* line 64, D:/Уроки/COURSE/lesson-17/src/sass/blocks/_offer.sass */
 .offer-text-2 {
+  font-size: 15px;
+}
+
+/* line 66, D:/Уроки/COURSE/lesson-17/src/sass/blocks/_offer.sass */
+.offer__phone {
   font-size: 15px;
 }
 
@@ -445,6 +465,13 @@ img {
   font-weight: 700;
   margin-top: 20px;
   width: 100%;
+}
+
+@media (max-width: 992px) {
+  /* line 46, D:/Уроки/COURSE/lesson-17/src/sass/blocks/_modal.sass */
+  .modal-dialog__input {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
