@@ -314,7 +314,7 @@ img {
   width: 50%;
   padding-right: 90px;
   position: relative;
-  margin-top: -141px;
+  margin-top: -137px;
 }
 
 /* line 19, D:/Уроки/COURSE/lesson-16/src/sass/blocks/_offer.sass */
@@ -391,7 +391,7 @@ img {
 /* line 56, D:/Уроки/COURSE/lesson-16/src/sass/blocks/_offer.sass */
 .offer-wrapper-text {
   display: flex;
-  margin-top: 12px;
+  margin-top: 10px;
   line-height: 1.6;
 }
 
@@ -411,7 +411,6 @@ img {
 /* line 67, D:/Уроки/COURSE/lesson-16/src/sass/blocks/_offer.sass */
 .offer__phone {
   font-size: 15px;
-  margin-top: 2px;
 }
 
 /* line 70, D:/Уроки/COURSE/lesson-16/src/sass/blocks/_offer.sass */
@@ -428,6 +427,11 @@ img {
   margin-top: 3px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+}
+
+/* line 79, D:/Уроки/COURSE/lesson-16/src/sass/blocks/_offer.sass */
+input {
+  margin-top: 6px;
 }
 
 /*# sourceMappingURL=style.css.map */
