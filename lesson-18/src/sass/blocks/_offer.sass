@@ -15,6 +15,7 @@
 		width: 50%
 		padding-right: 90px
 		position: relative
+		margin-top: -98px
 	&__title
 		max-width: 360px
 		line-height: 35px
@@ -23,14 +24,17 @@
 		max-width: 250px
 		margin-bottom: 30px
 	&__input
-		margin-bottom: 30px
+		margin-bottom: 37px
+		margin-top: 2px
 		width: 240px
+		outline: none
 		&:first-child
 			margin-right: 10px
 	&__button
 		+bold
 		width: 100%
 		min-height: 70px
+		outline: none
 .offer__phone
 		display: inline-block
 		color: $text-color
@@ -46,8 +50,10 @@
 			margin-bottom: 10px
 		&__button
 			font-size: 13px
-		&__phone
-			font-size: 12px
+	a .offer__phone
+		font-size: 12px
+	.offer-subtext
+		font-size: 12px
 @media (max-width: 768px)
 	.offer
 		background: #fff
@@ -56,12 +62,17 @@
 			padding-right: 0
 .offer-wrapper-text
 	display: flex
-	margin-top: 35px
-	line-height: 1.5
+	margin-top: 13px
+	line-height: 1.6
 .offer-text-1
 	font-size: 15px
 	margin-right: 40px
 .offer-text-2
 	font-size: 15px
+	margin-top: -2px
+	margin-left: 21px
 .offer__phone
 	font-size: 15px
+	margin-top: 2px
+.section-subtitle
+	margin-top: -5px

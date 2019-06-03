@@ -109,19 +109,21 @@ img {
   display: flex;
   align-items: center;
   text-align: right;
+  margin-right: -11px;
 }
 
-/* line 11, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_navbar.sass */
+/* line 12, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_navbar.sass */
 .navbar__address {
   display: flex;
   flex-direction: column;
   color: #333;
   font-size: 13px;
+  margin-bottom: -3px;
   font-family: 'Museo Sans Light', sans-serif;
   font-weight: 300;
 }
 
-/* line 17, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_navbar.sass */
+/* line 19, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_navbar.sass */
 .navbar__button {
   margin-left: 30px;
   padding: 18px 35px;
@@ -131,7 +133,7 @@ img {
   outline: none;
 }
 
-/* line 23, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_navbar.sass */
+/* line 25, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_navbar.sass */
 .navbar__phone {
   display: inline-block;
   color: #333;
@@ -143,16 +145,16 @@ img {
 }
 
 @media (max-width: 768px) {
-  /* line 33, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_navbar.sass */
+  /* line 35, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_navbar.sass */
   .navbar__contacts {
     display: none;
   }
-  /* line 35, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_navbar.sass */
+  /* line 37, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_navbar.sass */
   .navbar__button {
     font-size: 12px;
     padding: 15px 26px;
   }
-  /* line 38, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_navbar.sass */
+  /* line 40, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_navbar.sass */
   .navbar__logo {
     width: 90px;
   }
@@ -168,56 +170,61 @@ img {
 .hero-block {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 
-/* line 7, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
+/* line 8, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
 .hero-text {
   flex-basis: 50%;
   padding-right: 100px;
+  margin-bottom: 90px;
 }
 
-/* line 10, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
+/* line 12, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
 .hero-text__title {
   font-size: 41px;
   color: #333;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
   line-height: 55px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
-/* line 16, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
+/* line 18, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
 .hero-text__subtitle {
   display: inline-block;
   font-size: 20px;
   color: #333;
-  margin-bottom: 69px;
+  margin-bottom: 66px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
-/* line 21, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
+/* line 24, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
 .hero-list {
   margin: 0;
   padding: 0;
 }
 
-/* line 24, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
+/* line 27, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
 .hero-list__item {
   display: flex;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 36px;
+  margin-left: 3px;
 }
 
-/* line 28, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
+/* line 32, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
 .hero-list__item:last-child {
   margin-bottom: 0;
 }
 
-/* line 30, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
+/* line 34, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
 .hero-list__image {
-  flex-basis: 40px;
-  height: 40px;
-  min-width: 40px;
-  border: 2px solid #ffd200;
+  flex-basis: 36px;
+  height: 36px;
+  min-width: 36px;
+  border: 1px solid #ffd200;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -225,54 +232,64 @@ img {
   border-radius: 50%;
 }
 
-/* line 40, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
+/* line 44, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
 .hero-list__text {
   max-width: 300px;
 }
 
+/* line 46, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
+.list__text {
+  margin-left: -6px;
+}
+
+/* line 48, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
+.i-want-to-move-you {
+  margin-bottom: -7px;
+}
+
 @media (max-width: 1200px) {
-  /* line 44, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
+  /* line 52, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
   .hero-list {
     margin-bottom: 44px;
   }
-  /* line 46, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
+  /* line 54, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
   .hero-text {
     padding-right: 10px;
   }
 }
 
 @media (max-width: 992px) {
-  /* line 51, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
+  /* line 59, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
   .hero-block {
     flex-direction: column;
   }
-  /* line 54, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
+  /* line 62, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
   .hero-text__title {
     font-size: 33px;
   }
 }
 
 @media (max-width: 768px) {
-  /* line 60, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
+  /* line 68, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
   .hero-text__title {
     font-size: 24px;
     line-height: 1.4;
     margin-bottom: 15px;
   }
-  /* line 64, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
+  /* line 72, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
   .hero-text__subtitle {
     font-size: 16px;
     margin-bottom: 28px;
   }
-  /* line 68, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
+  /* line 76, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
   .hero-list__item {
     margin-bottom: 20px;
   }
-  /* line 70, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
+  /* line 78, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
   .hero-list__text {
     font-size: 12px;
   }
-  /* line 72, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
+  /* line 80, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_block-1.sass */
   .hero-list__image {
     margin-right: 15px;
   }
@@ -302,41 +319,45 @@ img {
   width: 50%;
   padding-right: 90px;
   position: relative;
+  margin-top: -98px;
 }
 
-/* line 18, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
+/* line 19, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
 .offer__title {
   max-width: 360px;
   line-height: 35px;
   margin-bottom: 24px;
 }
 
-/* line 22, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
+/* line 23, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
 .offer__subtitle {
   max-width: 250px;
   margin-bottom: 30px;
 }
 
-/* line 25, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
+/* line 26, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
 .offer__input {
-  margin-bottom: 30px;
+  margin-bottom: 37px;
+  margin-top: 2px;
   width: 240px;
+  outline: none;
 }
 
-/* line 28, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
+/* line 31, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
 .offer__input:first-child {
   margin-right: 10px;
 }
 
-/* line 30, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
+/* line 33, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
 .offer__button {
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
   width: 100%;
   min-height: 70px;
+  outline: none;
 }
 
-/* line 34, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
+/* line 38, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
 .offer__phone {
   display: inline-block;
   color: #333;
@@ -348,58 +369,70 @@ img {
 }
 
 @media (max-width: 1200px) {
-  /* line 42, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
+  /* line 46, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
   .offer {
     background-size: cover;
   }
-  /* line 44, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
+  /* line 48, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
   .offer__input {
     width: 100%;
     margin-bottom: 10px;
   }
-  /* line 47, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
+  /* line 51, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
   .offer__button {
     font-size: 13px;
   }
-  /* line 49, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
-  .offer__phone {
+  /* line 53, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
+  a .offer__phone {
+    font-size: 12px;
+  }
+  /* line 55, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
+  .offer-subtext {
     font-size: 12px;
   }
 }
 
 @media (max-width: 768px) {
-  /* line 52, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
+  /* line 58, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
   .offer {
     background: #fff;
   }
-  /* line 54, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
+  /* line 60, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
   .offer-block {
     width: 100%;
     padding-right: 0;
   }
 }
 
-/* line 57, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
+/* line 63, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
 .offer-wrapper-text {
   display: flex;
-  margin-top: 35px;
-  line-height: 1.5;
+  margin-top: 13px;
+  line-height: 1.6;
 }
 
-/* line 61, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
+/* line 67, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
 .offer-text-1 {
   font-size: 15px;
   margin-right: 40px;
 }
 
-/* line 64, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
+/* line 70, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
 .offer-text-2 {
   font-size: 15px;
+  margin-top: -2px;
+  margin-left: 21px;
 }
 
-/* line 66, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
+/* line 74, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
 .offer__phone {
   font-size: 15px;
+  margin-top: 2px;
+}
+
+/* line 77, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_offer.sass */
+.section-subtitle {
+  margin-top: -5px;
 }
 
 /* line 1, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_modal.sass */
@@ -442,9 +475,10 @@ img {
   border: none;
   background: transparent;
   outline: none;
+  cursor: pointer;
 }
 
-/* line 28, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_modal.sass */
+/* line 29, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_modal.sass */
 .modal-dialog__input {
   width: 100%;
   padding: 20px;
@@ -456,7 +490,7 @@ img {
   border-margin: 0 auto;
 }
 
-/* line 37, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_modal.sass */
+/* line 38, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_modal.sass */
 .modal-dialog__btn {
   padding: 18px 35px;
   font-family: 'Museo Sans Bold', sans-serif;
@@ -469,7 +503,7 @@ img {
 }
 
 @media (max-width: 992px) {
-  /* line 46, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_modal.sass */
+  /* line 47, D:/Уроки/COURSE/lesson-18/src/sass/blocks/_modal.sass */
   .modal-dialog__input {
     font-size: 14px;
   }
