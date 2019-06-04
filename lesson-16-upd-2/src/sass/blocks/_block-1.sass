@@ -1,0 +1,103 @@
+.hero
+	padding: 44px 0
+	background: #f5f5f5
+	&-block
+		display: flex
+		align-items: center
+		margin-bottom: 20px
+		// margin-top: -32px
+	&-text
+		flex-basis: 50%
+		padding-right: 100px
+		margin-bottom: 22px
+		&__title
+			font-size: 41px
+			color: $text-color
+			+bold
+			line-height: 55px
+			margin-bottom: 37px
+			margin-left: -2px
+		&__subtitle
+			display: inline-block
+			font-size: 20px
+			color: $text-color
+			margin-bottom: 66px
+			+bold
+	&-list
+		margin: 0
+		padding: 0
+		&__item
+			display: flex
+			align-items: center
+			margin-bottom: 32px
+			font-size: 14px
+			line-height: 24px
+			// margin-top: 10px
+			// margin-left: 3px
+    		// line-height: 1.3
+		&__image
+			flex-basis: 36px
+			height: 36px             
+			min-width: 36px           
+			border: 1px solid $main-color
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-right: 32px
+			margin-bottom: 22px
+			border-radius: 50%
+		&__text
+			max-width: 300px
+			
+.list__text
+	margin-left: 2px
+// .i-want-to-move-you
+// 	margin-bottom: 17px
+// .i-want-to-move-you-2
+// 	margin-top: -53px
+// .i-want-to-move-you-3
+// 	margin-top: -92px
+// .i-want-to-move-you-img
+// 	margin-top: 5px
+// .i-want-to-move-you-img-2
+// 	margin-top: -31px
+// .i-want-to-move-you-img-3
+// 	margin-top: 5px
+.block-to-move
+	margin-top: 5px
+
+@media (max-width: 1200px)
+	.hero
+		&-list
+			margin-bottom: 44px
+		&-text
+			padding-right: 10px
+
+@media (max-width: 992px)
+	.hero
+		&-block
+			flex-direction: column
+		&-text
+			&__title
+				font-size: 33px	
+
+@media (max-width: 768px)
+	.hero
+		&-text
+			&__title
+				font-size: 24px
+				line-height: 1.4
+				margin-bottom: 15px
+			&__subtitle
+				font-size: 16px
+				margin-bottom: 28px
+		&-list
+			&__item
+				margin-bottom: 20px
+			&__text
+				font-size: 12px
+			&__image
+				margin-right: 15px
+li.hero-list__item:last-child
+	margin-bottom: 0
+
