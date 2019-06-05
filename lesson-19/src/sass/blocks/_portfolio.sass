@@ -16,7 +16,15 @@
 		justify-content: space-between
 		margin-top: 68px
 		// cursor: pointer Почему тут просто не задать? Зачем столько разделений?
-.slider
-	&__image
-		margin: auto
+@media (max-width: 1200px)
+	.slider
+		&__item
+			margin-right: 15px
+@media (max-width: 768px)
+	.slider
+		&__image
+			margin: auto
+@media (max-width: 320px)
+	.portfolio__title
+		font-size: 18px
 		

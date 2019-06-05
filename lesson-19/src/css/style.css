@@ -544,9 +544,25 @@ img {
   margin-top: 68px;
 }
 
-/* line 20, D:/Уроки/COURSE/lesson-19/src/sass/blocks/_portfolio.sass */
-.slider__image {
-  margin: auto;
+@media (max-width: 1200px) {
+  /* line 21, D:/Уроки/COURSE/lesson-19/src/sass/blocks/_portfolio.sass */
+  .slider__item {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 25, D:/Уроки/COURSE/lesson-19/src/sass/blocks/_portfolio.sass */
+  .slider__image {
+    margin: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  /* line 28, D:/Уроки/COURSE/lesson-19/src/sass/blocks/_portfolio.sass */
+  .portfolio__title {
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
