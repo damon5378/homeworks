@@ -914,31 +914,27 @@ img {
     font-size: 14px;
     max-width: 202px;
   }
-}
-
-/* line 125, D:/Уроки/COURSE/lesson-21/src/sass/blocks/_brif.sass */
-.form__title {
-  font-size: 18px;
-  margin-bottom: 25px;
-}
-
-/* line 128, D:/Уроки/COURSE/lesson-21/src/sass/blocks/_brif.sass */
-.brif {
-  background-image: url("../img/brif-color-bg.jpg"), url("../img/brif-bg.jpg");
-  background-position: top center, bottom center;
-  background-size: 100% 40%, cover;
-  background-repeat: repeat-x, no-repeat;
-}
-
-/* line 133, D:/Уроки/COURSE/lesson-21/src/sass/blocks/_brif.sass */
-.brif__form {
-  padding-left: 0;
-}
-
-/* line 135, D:/Уроки/COURSE/lesson-21/src/sass/blocks/_brif.sass */
-.form__description {
-  max-width: 150px;
-  margin: auto;
+  /* line 125, D:/Уроки/COURSE/lesson-21/src/sass/blocks/_brif.sass */
+  .form__title {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  /* line 128, D:/Уроки/COURSE/lesson-21/src/sass/blocks/_brif.sass */
+  .brif {
+    background-image: url("../img/brif-color-bg.jpg"), url("../img/brif-bg.jpg");
+    background-position: top center, bottom center;
+    background-size: 100% 40%, cover;
+    background-repeat: repeat-x, no-repeat;
+  }
+  /* line 133, D:/Уроки/COURSE/lesson-21/src/sass/blocks/_brif.sass */
+  .brif__form {
+    padding-left: 0;
+  }
+  /* line 135, D:/Уроки/COURSE/lesson-21/src/sass/blocks/_brif.sass */
+  .form__description {
+    max-width: 150px;
+    margin: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
