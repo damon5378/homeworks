@@ -45,12 +45,17 @@
 @media (max-width: 768px)
 	.map
 		display: flex
-		flex-direction: column
+		flex-direction: column-reverse
 		width: 100%
 		margin-top: 470px
-	.contacts-block
-		margin-top: -93px
-		margin-left: -660px
+	.contacts
+		flex-basis: 100%
+		padding: 0
+		&-block
+			justify-content: center
+	// .contacts-block
+	// 	margin-top: -93px
+	// 	margin-left: -660px
 @media (max-width: 320px)
 	.contacts__title
 		font-size: 18px

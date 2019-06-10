@@ -453,6 +453,13 @@ img {
   margin-top: -5px;
 }
 
+@media (max-width: 320px) {
+  /* line 81, D:/Уроки/COURSE/lesson-22/src/sass/blocks/_offer.sass */
+  a .offer__phone {
+    font-size: 11px;
+  }
+}
+
 /* line 1, D:/Уроки/COURSE/lesson-22/src/sass/blocks/_modal.sass */
 .modal {
   position: fixed;
@@ -572,6 +579,10 @@ img {
   /* line 28, D:/Уроки/COURSE/lesson-22/src/sass/blocks/_portfolio.sass */
   .portfolio__title {
     font-size: 18px;
+  }
+  /* line 30, D:/Уроки/COURSE/lesson-22/src/sass/blocks/_portfolio.sass */
+  .slick-slide img {
+    margin-left: 7px;
   }
 }
 
@@ -1017,28 +1028,32 @@ img {
   /* line 46, D:/Уроки/COURSE/lesson-22/src/sass/blocks/_footer.sass */
   .map {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     width: 100%;
     margin-top: 470px;
   }
   /* line 51, D:/Уроки/COURSE/lesson-22/src/sass/blocks/_footer.sass */
+  .contacts {
+    flex-basis: 100%;
+    padding: 0;
+  }
+  /* line 54, D:/Уроки/COURSE/lesson-22/src/sass/blocks/_footer.sass */
   .contacts-block {
-    margin-top: -93px;
-    margin-left: -660px;
+    justify-content: center;
   }
 }
 
 @media (max-width: 320px) {
-  /* line 55, D:/Уроки/COURSE/lesson-22/src/sass/blocks/_footer.sass */
+  /* line 60, D:/Уроки/COURSE/lesson-22/src/sass/blocks/_footer.sass */
   .contacts__title {
     font-size: 18px;
   }
-  /* line 57, D:/Уроки/COURSE/lesson-22/src/sass/blocks/_footer.sass */
+  /* line 62, D:/Уроки/COURSE/lesson-22/src/sass/blocks/_footer.sass */
   .contacts-list {
     margin-top: -55px;
     max-width: 195px;
   }
-  /* line 60, D:/Уроки/COURSE/lesson-22/src/sass/blocks/_footer.sass */
+  /* line 65, D:/Уроки/COURSE/lesson-22/src/sass/blocks/_footer.sass */
   .map {
     margin-top: 410px;
   }
