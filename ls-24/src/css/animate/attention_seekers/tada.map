@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "tada.css",
+	"sources": [
+		"../../../sass/animate/attention_seekers/tada.scss"
+	],
+	"sourcesContent": [
+		"@keyframes tada {\n  from {\n    transform: scale3d(1, 1, 1);\n  }\n\n  10%,\n  20% {\n    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);\n  }\n\n  30%,\n  50%,\n  70%,\n  90% {\n    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);\n  }\n\n  40%,\n  60%,\n  80% {\n    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);\n  }\n\n  to {\n    transform: scale3d(1, 1, 1);\n  }\n}\n\n.tada {\n  animation-name: tada;\n}\n"
+	],
+	"names": [],
+	"mappings": ";AAAA,UAAU,CAAV,IAAU;EACR,IAAI;IACF,SAAS,EAAE,gBAAgB;;EAG7B,GAAG;EACH,GAAG;IACD,SAAS,EAAE,sBAAsB,CAAC,wBAAwB;;EAG5D,GAAG;EACH,GAAG;EACH,GAAG;EACH,GAAG;IACD,SAAS,EAAE,sBAAsB,CAAC,uBAAuB;;EAG3D,GAAG;EACH,GAAG;EACH,GAAG;IACD,SAAS,EAAE,sBAAsB,CAAC,wBAAwB;;EAG5D,EAAE;IACA,SAAS,EAAE,gBAAgB;;;;;AAI/B,AAAA,KAAK,CAAC;EACJ,cAAc,EAAE,IAAI;CACrB"
+}
