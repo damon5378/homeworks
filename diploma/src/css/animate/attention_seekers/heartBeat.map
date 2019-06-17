@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "heartBeat.css",
+	"sources": [
+		"../../../sass/animate/attention_seekers/heartBeat.scss"
+	],
+	"sourcesContent": [
+		"@keyframes heartBeat {\n  0% {\n    transform: scale(1);\n  }\n\n  14% {\n    transform: scale(1.3);\n  }\n\n  28% {\n    transform: scale(1);\n  }\n\n  42% {\n    transform: scale(1.3);\n  }\n\n  70% {\n    transform: scale(1);\n  }\n}\n\n.heartBeat {\n  animation-name: heartBeat;\n  animation-duration: 1.3s;\n  animation-timing-function: ease-in-out;\n}\n"
+	],
+	"names": [],
+	"mappings": ";AAAA,UAAU,CAAV,SAAU;EACR,EAAE;IACA,SAAS,EAAE,QAAQ;;EAGrB,GAAG;IACD,SAAS,EAAE,UAAU;;EAGvB,GAAG;IACD,SAAS,EAAE,QAAQ;;EAGrB,GAAG;IACD,SAAS,EAAE,UAAU;;EAGvB,GAAG;IACD,SAAS,EAAE,QAAQ;;;;;AAIvB,AAAA,UAAU,CAAC;EACT,cAAc,EAAE,SAAS;EACzB,kBAAkB,EAAE,IAAI;EACxB,yBAAyB,EAAE,WAAW;CACvC"
+}

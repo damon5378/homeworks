@@ -1,0 +1,73 @@
+.offer
+	margin-top: 100px
+	background-color: $bg
+	width: 100%
+	// opacity: 0.55
+	position: relative
+	&-block
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		padding-top: 105px
+		padding-bottom: 120px
+	&__item
+		margin-top: 21px
+		position: relative
+		z-index: 99
+		color: $white
+		&:hover
+			color: $black
+			+bold
+	&__image
+		filter: brightness(30%)
+		&:hover
+			filter: brightness(80%)
+			transition: 0.3s
+	&__wrapper
+		position: absolute
+		top: 19%
+		left: 18%
+		width: 257px
+		font-size: 20px
+		line-height: 26px
+	&__title
+		text-align: center
+	&__button
+		background-color: $main-color
+		padding: 11px 20px
+		font-size: 15px
+		text-transform: uppercase
+		+bold
+		position: absolute
+		top: 57%
+		left: 33%
+		color: $black
+		&:hover
+			background-color: $black
+			color: $white
+			cursor: pointer
+.section__title
+	position: absolute
+	top: -4%
+	left: 4%
+	background-color: $main-color
+	text-align: center
+	text-transform: uppercase
+	font-size: 28px
+	line-height: 28px
+	padding: 19px 65px
+	+bold
+	// &__hide
+	// 	position: absolute
+	// 	top: 57%
+	// 	left: 33%
+	// 	background-color: $black
+	// 	padding: 11px 20px
+	// 	font-size: 15px
+	// 	text-transform: uppercase
+	// 	+bold
+	// 	text-align: center
+	// 	width: 38%
+	// 	display: none
+	// 	&:hover
+	// 		display: block

@@ -1,0 +1,86 @@
+.navbar
+	padding: 8px 0
+	&-block
+		display: flex
+		// justify-content: space-between
+		// align-items: center
+	&__menu
+		display: flex
+		align-items: center
+		text-align: right
+		margin-right: -12px
+	&__logo
+		margin-right: 50px
+	&__phone
+		margin-right: 32px
+		margin-left: 5px
+		text-decoration: none
+	&__button
+		padding: 10px 15px
+		outline: none
+		border: none
+.logo-text
+	color: #010101
+	font-size: 15px
+	text-transform: uppercase
+	+bold
+	display: block
+.contacts-wrap
+	background-color: $bg
+.menu
+	&__items
+		display: flex
+		justify-content: space-between
+	&__link
+		text-decoration: none
+		color: $text-color
+		+reg
+		&:hover
+			color: $main-color
+			border-bottom: 3px solid $main-color
+	&__item
+		list-style: none
+		margin-right: 60px
+		&:after
+			content: '|'
+			margin-left: 30px
+		&:last-child
+			&:after
+				display: none
+	// &__address
+	// 	display: flex
+	// 	flex-direction: column
+	// 	color: $text-color
+	// 	font-size: 13px
+	// 	margin-bottom: -3px
+	// 	+reg
+	// &__button
+	// 	margin-left: 30px
+	// 	padding: 18px 35px
+	// 	+bold
+	// 	font-size: 13px
+	// 	outline: none
+	// &__phone
+	// 	display: inline-block
+	// 	color: $text-color
+	// 	font-size: 20px
+	// 	text-decoration: none
+	// 	margin-top: 9px
+	// 	+bold
+		
+// @media (max-width: 768px)
+// 	.navbar
+// 		&__contacts
+// 			display: none
+// 		&__button
+// 			font-size: 12px
+// 			padding: 15px 26px
+// 		&__logo
+// 			width: 90px
+// @media (max-width: 320px)
+// 	.navbar
+// 		&__button
+// 			font-size: 10px
+// 			margin-right: 24px
+// 			margin-top: -2px
+

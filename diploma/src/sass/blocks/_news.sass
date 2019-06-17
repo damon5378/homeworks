@@ -1,0 +1,52 @@
+.news
+	background-color: $bg
+	position: relative
+	&__title
+		position: absolute
+		top: -5%
+		left: 4%
+		background-color: $main-color
+		text-align: center
+		text-transform: uppercase
+		font-size: 28px
+		line-height: 28px
+		padding: 19px 65px
+		+bold
+	&__block
+		display: flex
+		justify-content: space-between
+		padding-top: 88px
+	&__sub
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__caption
+		font-size: 20px
+		line-height: 28px
+		text-transform: uppercase
+		+bold
+		font-family: 'ProximaNovaCond-Regular'
+		&:hover
+			text-decoration: underline
+	&__text
+		max-width: 315px
+		font-size: 18px
+		line-height: 28px
+		margin-top: 0
+		font-family: 'ProximaNovaCond-Regular'
+		&:hover
+			text-decoration: underline
+	&__image
+		&:hover
+			filter: opacity(40%)
+			transition: 0.3s
+	&__day
+		background-color: $main-color
+	&__button
+		background-color: $main-color
+		padding: 25px 45px
+		font-family: 'ProximaNovaCond-Regular'
+		font-size: 20px
+		line-height: 28px
+		text-transform: uppercase
+		margin: auto
