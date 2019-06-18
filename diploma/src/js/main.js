@@ -122,12 +122,12 @@ new WOW().init();
   				}
   			]
   		});
-var brif = $('.brif');
-var brifTop = brif.offset().top;
+var map = $('.map');
+var mapTop = map.offset().top;
 $(window).bind('scroll', function(){
   var windowTop = $(this).scrollTop();
-  if(windowTop > brifTop) {
-    $('#map').html('<script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A766849459304b4a26ea616772d0d87808c7528b3a704b24f3d2c4ad3fc1a9232&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>')
+  if(windowTop > mapTop) {
+    $('#map').html('<script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A622bee0e611bd867da26aff4a64c2bd86c01dc7d950fbcf0e5f56282881b53ca&amp;width=100%25&amp;height=670&amp;lang=ru_RU&amp;scroll=false"></script>')
     $(window).unbind('scroll');
   	}
   });
