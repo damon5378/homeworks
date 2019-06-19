@@ -5,10 +5,24 @@
 	margin-bottom: 150px
 	padding: 95px 60px
 	display: flex
+	position: relative
 	&-block
 		display: flex
 		flex-wrap: wrap
 		width: 60%
+		&__list
+			float: right
+			margin-right: -80px
+			margin-top: -423px
+	&__title
+		margin-left: -45px
+		background-color: $main-color
+		text-align: center
+		text-transform: uppercase
+		font-size: 28px
+		line-height: 28px
+		padding: 19px 65px
+		+bold
 	&__item
 		display: flex
 		flex-direction: column
@@ -28,11 +42,12 @@
 		font-size: 18px
 		text-transform: uppercase
 		width: 160px
-		&__list
-			display: block
-			width: 40%
+		// &__list
+		// 	display: block
+		// 	width: 40%
 	&__wrapper
-		margin-bottom: 100px
+		margin-bottom: 70px
+		width: 404px
 	&__number
 		font-size: 35px
 		color: $main-color
@@ -49,5 +64,7 @@
 	list-style: none
 	font-size: 20px
 	margin-left: 15px
+.clearfix
+	clear: both
 
 		
