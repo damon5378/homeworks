@@ -1,5 +1,6 @@
 .hero
 	// padding-bottom: 5px
+	position: relative
 	&__title
 		position: absolute
 		top: 21%
@@ -44,6 +45,28 @@
 .button
 	font-size: 18px
 	text-transform: uppercase
+.active
+	display: none
+	background-color: $main-color
+	width: 13px
+	height: 13px
+	display: inline-block
+.dots
+	&__item
+		width: 13px
+		height: 13px
+		background-color: $white
+		margin-left: 15px
+		list-style: none
+		display: inline-block
+		&:hover
+			cursor: pointer
+	&__list
+		position: absolute
+		top: 92%
+		left: 46%
+		transform: translate(-50%, -50%)
+
 
 
 

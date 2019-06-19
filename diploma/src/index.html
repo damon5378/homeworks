@@ -23,14 +23,15 @@
 					<img src="img/logo.png" alt="Logo">
 				</div>
 				<!-- /.navbar__logo -->
-				<div class="navbar__menu">
+				<div class="navbar__menu" id="menu">
 					<ul class="menu menu__items">
-						<li class="menu__item"><a href="#" class="menu__link">Услуги</li></a>
-						<li class="menu__item"><a href="#" class="menu__link">Цены</li></a>
-						<li class="menu__item"><a href="#" class="menu__link">Отзывы</li></a>
-						<li class="menu__item"><a href="#" class="menu__link">Новости</li></a>
-						<li class="menu__item"><a href="#" class="menu__link">Контакты</li></a>
+						<li class="menu__item"><a href="#services" class="menu__link">Услуги</a></li>
+						<li class="menu__item"><a href="#prices" class="menu__link">Цены</a></li>
+						<li class="menu__item"><a href="#comments" class="menu__link">Отзывы</a></li>
+						<li class="menu__item"><a href="#news" class="menu__link">Новости</a></li>
+						<li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
 					</ul>
+				</div>
 					<div class="contacts-wrap">
 					<div class="navbar__contacts">
 						<span class="navbar__icon">
@@ -65,13 +66,22 @@
 				<div class="slider__item">
 					<img src="img/slide11.jpg" alt="" class="slider__image"></div>
 			<!-- /.slider slide__item -->
+			
 				
 		</div>
+		<div class="dots">
+				<ul class="dots__list">
+					<li class="dots__item active"></li>
+					<li class="dots__item active"></li>
+					<li class="dots__item active"></li>
+					<li class="dots__item active"></li>
+				</ul>
+			</div>
 	</section>
 
 	<section class="section offer">
 		<div class="container">
-			<span class="section__title">Услуги</span>
+			<span class="section__title"><a id="services">Услуги</a></span>
 			<div class="offer-block">
 				<div class="offer__item">
 					<img src="img/service1.jpg" alt="" class="offer__image">
@@ -187,7 +197,7 @@
 
 	<section class="section comments">
 		<div class="container">
-			<span class="comments__title">Отзывы</span>
+			<span class="comments__title"><a id="comments">Отзывы</a></span>
 			<div class="comments-block">
 				<div class="comments-block__item">
 					<img src="img/girl.png" alt="">
@@ -220,7 +230,7 @@
 	<!-- /.section comments -->
 	<section class="section news">
 		<div class="container">
-			<span class="news__title">Новости</span>
+			<span class="news__title"><a id="news">Новости</a></span>
 			<div class="news__block">
 				<div class="news__item">
 					<img src="img/news1.jpg" alt="" class="news__image">
@@ -272,6 +282,7 @@
 	<footer class="footer">
 		<div class="container">
 		<div class="footer__block">
+			<a id="contacts"></a>
 			<div class="footer__address">
 				<i class="fas fa-map-marker-alt"></i>
 				<span class="footer__title">г.Москва, ул. Советская 48 корп.3</span>
@@ -293,11 +304,15 @@
 		</div>
 	</footer>
 
+	<div id="back-top">
+		<a href="#" onclick="return up()">ВВЕРХ</a>  
+	</div>
+
 <div class="modal" id="modal">
 	<div class="modal-dialog">
 		<button class="modal-dialog__close" id="close">&times;</button>
 		<h3 class="modal-dialog__title">С радостью пообщаемся с Вами</h3>
-		<form action="#" class="form" id="modal-form">
+		<form action="#" class="form-m" id="modal-form">
 			<input type="tel" name="phone" placeholder="Введите Ваш номер телефона" class="modal-dialog__input phone" id="place">
 			<button class="button modal-dialog__btn">Перезвоните мне</button>
 		</form>

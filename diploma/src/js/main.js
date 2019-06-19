@@ -72,9 +72,58 @@ new WOW().init();
           phone: "Заполните поле"
         }
       });
+
+      //Anchor
+      $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 2000);
+    });
+
+      //upButton
+
+      $('.dots__list').on('click', 'li', function(){
+        var lindex = $(this).index();
+        $( ".slider" ).slick('slickGoTo', parseInt(lindex)); // меняем слад на нужный индекс
+        $('dots__list li').removeClass('active'); // change class
+        $(this).addClass('active');
+});
+      $('.slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+        var slideIndex = $(this).index();
+        $('.dots__list li').removeClass('active');
+        $('.dots__list li').eq(currentSlide).addClass('active')
+  });
+
+
+
+    //   var top_show = 150; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
+    //    var delay = 1000; // Задержка прокрутки
+ 
+    //   $(window).scroll(function () { // При прокрутке попадаем в эту функцию
+    //    В зависимости от положения полосы прокрукти и значения top_show, скрываем или открываем кнопку "Наверх" 
+    //   if ($(this).scrollTop() > top_show) $('#up').fadeIn();
+    //   else $('#up').fadeOut();
+    // });
+    // $('#up').click(function () { // При клике по кнопке "Наверх" попадаем в эту функцию
+    //   /* Плавная прокрутка наверх */
+    //   $('body, html').animate({
+    //     scrollTop: 0
+    //   }, delay);
+    // });
+//       (function($) {  
+//         $(function() {  
+   
+//     $('#up').click(function() {  
+//     $('body,html').animate({scrollTop: top}, 2000);  
+//     return false;  
+//   })  
+   
+// })  
+// });
       
       //Маска для телефона
-      $('.phone').mask('+375 (99) 999-99-99');
+      $('.phone').mask('8 (999) 999-99-99');
       //Слайдер
   		$('.slider').slick({
   			slidesToShow: 1,
@@ -135,5 +184,19 @@ $(window).bind('scroll', function(){
 });
 
 
-
+  var top_show = 1000; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
+  var delay = 2000; // Задержка прокрутки
+  $(document).ready(function() {
+    $(window).scroll(function () { // При прокрутке попадаем в эту функцию
+      /* В зависимости от положения полосы прокрукти и значения top_show, скрываем или открываем кнопку "Наверх" */
+      if ($(this).scrollTop() > top_show) $('#back-top').fadeIn();
+      else $('#back-top').fadeOut();
+    });
+    $('#back-top').click(function () { // При клике по кнопке "Наверх" попадаем в эту функцию
+      /* Плавная прокрутка наверх */
+      $('body, html').animate({
+        scrollTop: 0
+      }, delay);
+    });
+  });
 
