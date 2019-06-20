@@ -38,3 +38,62 @@
 			border-radius: 50%
 .far, .fas
 	color: $main-color
+@media (max-width: 992px)
+	.footer
+		&__address
+			margin-right: 15px
+			width: 201px
+		&__social
+			margin-right: 40px
+			display: flex
+		&__email
+			margin-right: 40px
+			display: flex
+			&:after
+				margin-left: 50px
+		&__phone
+			margin-right: 10px
+			display: flex
+		&__block
+			justify-content: space-between
+.far, .fas
+	align-items: center
+@media (max-width: 768px)
+	.footer
+		&__block
+			flex-wrap: wrap
+		&__email
+			margin-left: 111px
+@media (max-width: 576px)
+	.footer
+		&__address
+			margin-right: 0
+			text-align: center
+		&__block
+			flex-direction: column
+		&__social
+			margin-top: 10px
+			margin-left: 40px
+		&__email
+			margin-top: 10px
+			margin-left: 42px
+			&:after
+				display: none
+		&__phone
+			margin-top: 10px
+@media (max-width: 320px)
+	.footer
+		&__address
+			margin-right: 0
+		&__social
+			margin-right: 33px
+		&__email
+			margin-right: 0
+			width: 250px
+		&__phone
+			margin-right: 0
+		&__block
+			width: 250px
+			text-align: center
+			margin-left: -27px
+

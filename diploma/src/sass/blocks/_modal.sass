@@ -37,7 +37,6 @@
     		margin: 0 auto
 .modal-dialog__btn
     	padding: 18px 35px
-    	font-family: 'Museo Sans Bold', sans-serif
     	font-weight: 700
     	font-size: 13px
     	+bold
@@ -46,6 +45,10 @@
 @media (max-width: 992px)
 	.modal-dialog__input
 		font-size: 14px
+@media (max-width: 576px)
+	.modal-dialog__btn
+		background-color: $main-color
+		border: none
 @media (max-width: 320px)
 	.modal-dialog
 		&__title

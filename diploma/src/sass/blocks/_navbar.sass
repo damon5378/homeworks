@@ -17,12 +17,10 @@
 		margin-left: 5px
 		text-decoration: none
 		color: $black
-		font-family: 'ProximaNovaCond-Regular'
 	&__button
 		padding: 10px 15px
 		outline: none
 		border: none
-		font-family: 'ProximaNovaCond-Regular'
 .logo-text
 	color: #010101
 	font-size: 15px
@@ -54,6 +52,46 @@
 		&:last-child
 			&:after
 				display: none
+@media (max-width: 992px)
+	.navbar
+		&__menu
+			margin-right: 0
+		&__logo
+			position: absolute
+			top: 0
+			left: 55px
+		&__contacts
+			display: flex
+			justify-content: center
+			align-items: center
+	.contacts-wrap
+		width: 100%
+		margin-left: -40px
+		padding: 0 30px
+@media (max-width: 768px)
+	.menu
+		&__items
+			display: none
+	.navbar
+		&__button
+			background-color: $main-color
+	.contacts-wrap
+		background-color: transparent
+@media (max-width: 576px)
+	.navbar
+		&__logo
+			display: none
+		&__button
+			background-color: $main-color
+@media (max-width: 320px)
+	.navbar
+		&__contacts
+			flex-wrap: wrap
+		&__menu
+			margin-right: 0
+		&__phone
+			margin-right: 9px
+
 	// &__address
 	// 	display: flex
 	// 	flex-direction: column

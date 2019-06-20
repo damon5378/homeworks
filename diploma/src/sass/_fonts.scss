@@ -1,26 +1,28 @@
 @font-face {
-font-family: 'ProximaNova-Bold';
-src: url('../fonts/Proxima/ProximaNova-Bold.ttf'),
-url('../fonts/Proxima/ProximaNova-Bold.ttf') format('truetype');
+font-family: 'Proxima Nova Regular';
+src: url('../fonts/Proxima/ProximaNova-Regular.eot');
+src: url('../fonts/Proxima/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+url('../fonts/Proxima/ProximaNova-Regular.woff') format('woff'),
+url('../fonts/Proxima/ProximaNova-Regular.ttf') format('truetype');
 font-weight: normal;
 font-style: normal;
-font-display: optional;
 }
 
 @font-face {
-font-family: 'ProximaNovaCond-Regular';
-src: url('../fonts/Proxima/ProximaNovaCond-Regular.ttf'),
-url('../fonts/MuseoSans/MuseoSansCyrl-700.ttf') format('truetype');
+font-family: 'Proxima Nova Bold';
+src: url('../fonts/Proxima/ProximaNova-Bold.eot');
+src: url('../fonts/Proxima/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+url('../fonts/Proxima/ProximaNova-Bold.woff') format('woff'),
+url('../fonts/Proxima/ProximaNova-Bold.ttf') format('truetype');
 font-weight: normal;
 font-style: normal;
-font-display: optional;
 }
 
 @mixin reg {
-	font-family: 'ProximaNovaCond-Regular', sans-serif;
+	font-family: 'Proxima Nova Regular', sans-serif;
 	font-weight: 300;
 }
 @mixin bold{
-	font-family: 'ProximaNova-Bold', sans-serif;
+	font-family: 'Proxima Nova Bold', sans-serif;
 	font-weight: 700;
 }
