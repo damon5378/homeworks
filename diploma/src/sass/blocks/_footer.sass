@@ -35,14 +35,12 @@
 		+bold
 	&__icon
 		margin-right: 5px
-	&__social img
+		filter: grayscale(100%)
 		&:hover
-			background-color: $main-color
+			// background-color: $main-color
+			filter: grayscale(0%)
+			cursor: pointer
 			border-radius: 50%
-		// &:hover
-		// 	background-color: $main-color
-		// 	cursor: pointer
-		// 	border-radius: 50%
 .far, .fas
 	color: $main-color
 @media (max-width: 992px)

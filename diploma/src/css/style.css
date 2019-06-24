@@ -2294,115 +2294,117 @@ img {
 /* line 36, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
 .footer__icon {
   margin-right: 5px;
+  filter: grayscale(100%);
 }
 
 /* line 39, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
-.footer__social img:hover {
-  background-color: #ffc800;
+.footer__icon:hover {
+  filter: grayscale(0%);
+  cursor: pointer;
   border-radius: 50%;
 }
 
-/* line 46, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
+/* line 44, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
 .far, .fas {
   color: #ffc800;
 }
 
 @media (max-width: 992px) {
-  /* line 50, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
+  /* line 48, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
   .footer__address {
     margin-right: 15px;
     width: 201px;
   }
-  /* line 53, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
+  /* line 51, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
   .footer__social {
     margin-right: 40px;
     display: flex;
   }
-  /* line 56, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
+  /* line 54, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
   .footer__email {
     margin-right: 40px;
     display: flex;
   }
-  /* line 59, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
+  /* line 57, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
   .footer__email:after {
     margin-left: 50px;
   }
-  /* line 61, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
+  /* line 59, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
   .footer__phone {
     margin-right: 10px;
     display: flex;
   }
-  /* line 64, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
+  /* line 62, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
   .footer__block {
     justify-content: space-between;
   }
 }
 
-/* line 66, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
+/* line 64, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
 .far, .fas {
   align-items: center;
 }
 
 @media (max-width: 768px) {
-  /* line 70, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
+  /* line 68, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
   .footer__block {
     flex-wrap: wrap;
   }
-  /* line 72, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
+  /* line 70, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
   .footer__email {
     margin-left: 111px;
   }
 }
 
 @media (max-width: 576px) {
-  /* line 76, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
+  /* line 74, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
   .footer__address {
     margin-right: 0;
     text-align: center;
   }
-  /* line 79, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
+  /* line 77, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
   .footer__block {
     flex-direction: column;
   }
-  /* line 81, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
+  /* line 79, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
   .footer__social {
     margin-top: 10px;
     margin-left: 40px;
   }
-  /* line 84, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
+  /* line 82, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
   .footer__email {
     margin-top: 10px;
     margin-left: 42px;
   }
-  /* line 87, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
+  /* line 85, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
   .footer__email:after {
     display: none;
   }
-  /* line 89, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
+  /* line 87, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
   .footer__phone {
     margin-top: 10px;
   }
 }
 
 @media (max-width: 320px) {
-  /* line 93, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
+  /* line 91, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
   .footer__address {
     margin-right: 0;
   }
-  /* line 95, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
+  /* line 93, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
   .footer__social {
     margin-right: 33px;
   }
-  /* line 97, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
+  /* line 95, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
   .footer__email {
     margin-right: 0;
     width: 250px;
   }
-  /* line 100, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
+  /* line 98, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
   .footer__phone {
     margin-right: 0;
   }
-  /* line 102, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
+  /* line 100, D:/Уроки/COURSE/diploma/src/sass/blocks/_footer.sass */
   .footer__block {
     width: 250px;
     text-align: center;
