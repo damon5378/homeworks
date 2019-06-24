@@ -1,4 +1,4 @@
-.modal
+.modal-footer
 	position: fixed
 	left: 0
 	top: 0
@@ -8,7 +8,7 @@
 	display: none
 	&_active
 		display: flex
-	&-dialog
+	&-dialogf
 		position: relative
 		margin: auto
 		max-width: 450px
@@ -16,9 +16,9 @@
 		min-width: 200px
 		background-color: #fff
 		padding: 40px
-		&__title
+		&__title-f
 			text-align: center
-		&__close
+		&__close-f
 			position: absolute
 			top: 0
 			right: 0
@@ -26,7 +26,7 @@
 			background: transparent
 			outline: none
 			cursor: pointer
-		&__input
+		&__input-f
 			width: 100%
 			padding: 20px
 			border-radius: 10px
@@ -35,14 +35,13 @@
 			border: 1px solid #ddd
     		padding: 20px 26px
     		margin: 0 auto
-.modal-dialog__btn
+.modal-dialog__btn-f
     	padding: 18px 35px
     	font-weight: 700
     	font-size: 13px
     	+bold
     	margin-top: 20px
     	width: 100%
-    	border: none
 @media (max-width: 992px)
 	.modal-dialog__input
 		font-size: 14px
@@ -56,4 +55,3 @@
 			font-size: 13px
 	.modal-dialog__input
 		font-size: 11px
-		

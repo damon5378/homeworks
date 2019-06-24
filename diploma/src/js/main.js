@@ -27,7 +27,7 @@ new WOW().init();
           }
         }
       });
-      $('#offer-form').validate({
+      $('#map__form').validate({
         errorClass: "invalid",
         rules: {
           username: {
@@ -36,10 +36,6 @@ new WOW().init();
             maxlength: 15
           },
           phone: "required",
-          email: {
-            required: true,
-            email: true
-          }
         },
         messages: {
           username: {
@@ -80,7 +76,11 @@ new WOW().init();
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 2000);
     });
-
+      $('.menu-btn').on('click', function(event){
+        event.preventDefault;
+        $(this).toggleClass('menu-btn_active');
+        $('.menu-nav').toggleClass('menu-nav_active')
+      });
       //upButton
 
       $('.dots__list').on('click', 'li', function(){
@@ -123,7 +123,8 @@ new WOW().init();
 // });
       
       //Маска для телефона
-      $('.phone').mask('8 (999) 999-99-99');
+      $('.phone').mask('+7 (999) 999-99-99');
+      $('.phone-f').mask('+7 (999) 999-99-99');
       //Слайдер
   		$('.slider').slick({
   			slidesToShow: 1,

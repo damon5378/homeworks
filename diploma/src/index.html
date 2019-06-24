@@ -40,7 +40,12 @@
 						<a href="tel:+7(863)342-22-21" class="navbar__phone">+7(863)342-22-21</a>
 						<button class="button navbar__button" onclick="ym(53996197, 'reachGoal', 'button'); return true;" id="button">Заказать звонок</button>
 					</div>
+					
 					</div>
+					<a href="#" class="menu-btn">
+							<span></span>
+						</a>
+
 					<!-- /.navbar__contacts -->
 					
 				</div>
@@ -51,6 +56,21 @@
 		<!-- /.container -->
 	</nav>
 	<!-- /.navbar -->
+
+	<div class="section">
+						<div class="menu-block">
+							<nav class="menu-nav">
+								<a href="#services" class="menu-nav__link">Услуги</a>
+								<a href="#prices" class="menu-nav__link">Цены</a>
+								<a href="#comments" class="menu-nav__link">Отзывы</a>
+								<a href="#news" class="menu-nav__link">Новости</a>
+								<a href="#contacts" class="menu-nav__link">Контакты</a>
+							</nav>
+							
+						</div>
+						
+					</div>
+
 	<main>
 		<section class="hero">
 			<div class="slider">
@@ -89,7 +109,7 @@
 					<h4 class="offer__title">Монтаж систем<br> отопления</h4>
 				</div>
 				<span class="offer__button">Узнать цену</span>
-				<span class="offer__hide"></span>
+				<span class="offer__hover">От 500р.</span>
 				</div>
 				<div class="offer__item">
 					<img src="img/service2.jpg" alt="" class="offer__image">
@@ -268,10 +288,10 @@
 			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A622bee0e611bd867da26aff4a64c2bd86c01dc7d950fbcf0e5f56282881b53ca&amp;width=100%25&amp;height=470&amp;lang=ru_RU&amp;scroll=false"></script>
 		</div>
 		<div class="container">
-		<form action="#" class="form">
+		<form action="#" class="form" id="map__form">
 			<h3 class="form__title">Оставьте<span class="form__title-orange"> Заявку</span></h3>
 			<input type="text" placeholder="Введите Ваше имя" class="form__input">
-			<input type="tel" placeholder="Введите Ваш номер телефона" class="form__input">
+			<input type="tel" name="phone" placeholder="Введите Ваш номер телефона" class="form__input phone-f">
 			<button class="button form__button">Заказать звонок</button>
 		</form>
 		</div>
@@ -285,7 +305,7 @@
 			<a id="contacts"></a>
 			<div class="footer__address">
 				<i class="fas fa-map-marker-alt"></i>
-				<span class="footer__title">г.Москва, ул. Советская 48 корп.3</span>
+				<span class="footer__title"><a href="https://yandex.by/maps/-/CCWoJF7T">г.Москва, ул. Советская 48 корп.3</a></span>
 			</div>
 			<div class="footer__social">
 				<a href="https://instagram.com"><img src="img/instagram.png" alt="" class="footer__icon"></a>
@@ -315,11 +335,23 @@
 		<h3 class="modal-dialog__title">С радостью пообщаемся с Вами</h3>
 		<form action="#" class="form-m" id="modal-form">
 			<input type="tel" name="phone" placeholder="Введите Ваш номер телефона" class="modal-dialog__input phone" id="place">
-			<button class="button modal-dialog__btn">Перезвоните мне</button>
+			<button class="button modal-dialog__btn" id="buttonf">Перезвоните мне</button>
 		</form>
 	</div>
 	<!-- /.modal-dialog -->
 </div>
+
+<div class="modal-footer" id="modalf">
+	<div class="modal-dialogf">
+		<button class="modal-dialog__close" id="close">&times;</button>
+		<h3 class="modal-dialog__title">Заявка принята</h3>
+		<form action="#" class="form-f" id="modal-formf">
+			<button class="button modal-dialog__btn">ОК</button>
+		</form>
+	</div>
+	<!-- /.modal-dialog -->
+</div>
+
 <!-- /.modal -->
 <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
