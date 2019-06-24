@@ -130,7 +130,7 @@ new WOW().init();
   			slidesToShow: 1,
   			slidesToScroll: 1,
         adaptiveHeight: true,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000,
   			prevArrow: $('.arrows__left'),
   			nextArrow: $('.arrows__right'),
