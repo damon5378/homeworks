@@ -889,6 +889,12 @@ img {
   font-weight: 300;
 }
 
+/* line 39, D:/Уроки/COURSE/diploma/src/sass/blocks/_navbar.sass */
+.menu__link:hover {
+  color: #ffc800;
+  border-bottom: 3px solid #ffc800;
+}
+
 /* line 42, D:/Уроки/COURSE/diploma/src/sass/blocks/_navbar.sass */
 .menu__item {
   list-style: none;
