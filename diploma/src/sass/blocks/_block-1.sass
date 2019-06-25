@@ -44,14 +44,12 @@
 		transform: translate(0%, -17%)
 		font-size: 18px
 		text-transform: uppercase
-
-.active
-	display: none
-	background-color: $main-color
-	width: 13px
-	height: 13px
-	display: inline-block
 .dots
+	&__list
+		position: absolute
+		top: 92%
+		left: 46%
+		transform: translate(-50%, -50%)
 	&__item
 		width: 13px
 		height: 13px
@@ -60,12 +58,14 @@
 		list-style: none
 		display: inline-block
 		&:hover
-			cursor: pointer
-	&__list
-		position: absolute
-		top: 92%
-		left: 46%
-		transform: translate(-50%, -50%)
+			cursor: pointer	
+.active
+	display: none
+	background-color: $main-color
+	width: 13px
+	height: 13px
+	display: inline-block
+	
 @media (max-width: 1366px)
 	.hero
 		&__title
@@ -105,6 +105,10 @@
 			line-height: 17px
 		&__button
 			font-size: 14px
+@media (max-width: 984px)
+	.hero
+		&__button
+			background-color: $main-color
 @media (max-width: 768px)
 	.hero
 		&__title

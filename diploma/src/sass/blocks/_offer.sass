@@ -34,10 +34,6 @@
 		line-height: 26px
 	&__title
 		text-align: center
-	&__hover
-		display: none
-		&:hover
-			display: block
 		// position: absolute
 		// top: 57%
 		// left: 33%
@@ -62,9 +58,15 @@
 		left: 33%
 		color: $black
 		&:hover
-			background-color: $black
-			color: $white
+			// background-color: $black
+			display: none
+			// color: $white
 			cursor: pointer
+	&__hover
+		display: none
+		&:hover
+			color: $white
+			display: block
 .section__title
 	// position: absolute
 	// top: -4%

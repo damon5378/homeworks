@@ -106,8 +106,12 @@
 @media (max-width: 984px)
 	.answers
 		background: linear-gradient(to bottom, $bg 100%, $white 0%)
-	.answers-block
-		margin-left: 85px
+		&-block
+			margin-left: 85px
+			&__list
+				position: absolute
+				top: 52%
+				left: 49%
 @media (max-width: 768px)
 	.answers
 		background: linear-gradient(to right, $bg 100%, $white 0%)
