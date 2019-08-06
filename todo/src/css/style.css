@@ -1,0 +1,650 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+/* line 11, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+/* line 23, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+/* line 31, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 40, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 53, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 64, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+/* line 76, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 85, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 95, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 105, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 116, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 125, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 133, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 137, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+/* line 148, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 160, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 176, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 186, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 195, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 206, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 218, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+/* line 229, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 240, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 253, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+/* line 261, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+/* line 270, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 280, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 290, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+/* line 299, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 308, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+/* line 320, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 328, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+/* line 339, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+/* line 347, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+@font-face {
+  font-family: 'Museo Sans Light';
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-300.eot");
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: optional;
+}
+
+@font-face {
+  font-family: 'Museo Sans Bold';
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: optional;
+}
+
+/* line 1, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+* {
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+img {
+  max-width: 100%;
+}
+
+/* line 10, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+/* line 1, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+.navbar {
+  padding: 15px 0;
+  background-color: purple;
+}
+
+/* line 4, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+.navbar__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 7, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+.navbar__link {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Cuprum', sans-serif;
+}
+
+/* line 1, D:/Уроки/COURSE/todo/src/sass/blocks/_hero.sass */
+.hero {
+  position: relative;
+  filter: brightness(30%);
+  height: 100%;
+}
+
+/* line 6, D:/Уроки/COURSE/todo/src/sass/blocks/_hero.sass */
+.hero__title {
+  font-size: 68px;
+  color: #fc1129;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 13, D:/Уроки/COURSE/todo/src/sass/blocks/_hero.sass */
+.hero__subtitle {
+  font-size: 53px;
+  position: absolute;
+  top: 21%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 19, D:/Уроки/COURSE/todo/src/sass/blocks/_hero.sass */
+.hero__wrapper {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 2, D:/Уроки/COURSE/todo/src/sass/blocks/_offer.sass */
+.offer__title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: 'Cuprum', sans-serif;
+}
+
+/* line 7, D:/Уроки/COURSE/todo/src/sass/blocks/_offer.sass */
+.offer__text {
+  line-height: 1.4;
+}
+
+/* line 9, D:/Уроки/COURSE/todo/src/sass/blocks/_offer.sass */
+.offer__image {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* line 14, D:/Уроки/COURSE/todo/src/sass/blocks/_offer.sass */
+.offer-block {
+  display: flex;
+  flex-basis: 50%;
+  margin-top: 40px;
+}
+
+/* line 18, D:/Уроки/COURSE/todo/src/sass/blocks/_offer.sass */
+.offer__card {
+  background: white;
+  padding: 30px;
+  margin-right: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* line 23, D:/Уроки/COURSE/todo/src/sass/blocks/_offer.sass */
+.offer__card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+/* line 25, D:/Уроки/COURSE/todo/src/sass/blocks/_offer.sass */
+.mrn {
+  margin-top: 10px;
+}
+
+/* line 1, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.all {
+  text-align: center;
+}
+
+/* line 4, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.all input[type="checkbox"] {
+  display: none;
+}
+
+/* line 7, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.all input[type="checkbox"]:checked + label {
+  background-color: #2980b9;
+  color: white;
+}
+
+/* line 11, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.all input[type="checkbox"]:checked + label:before {
+  content: 'Close All';
+}
+
+/* line 17, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.all label {
+  position: relative;
+  margin: 0;
+  padding: 5px 30px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #2980b9;
+  background-color: white;
+  border: 1px solid #2980b9;
+  border-radius: 99px;
+}
+
+/* line 28, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.all label:before {
+  content: 'Open All';
+}
+
+/* line 34, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.offer__accordion {
+  position: relative;
+  width: 80%;
+  margin: 50px auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* line 42, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.offer__accordion .offer__trigger #checkbox-1,
+.offer__accordion .offer__trigger #checkbox-2,
+.offer__accordion .offer__trigger #checkbox-3 {
+  display: none;
+}
+
+/* line 47, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.offer__accordion .offer__trigger #checkbox-1:checked + label,
+.offer__accordion .offer__trigger #checkbox-2:checked + label,
+.offer__accordion .offer__trigger #checkbox-3:checked + label {
+  background-color: slategray;
+}
+
+/* line 52, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.offer__accordion .offer__trigger #checkbox-1:checked + label i:before,
+.offer__accordion .offer__trigger #checkbox-2:checked + label i:before,
+.offer__accordion .offer__trigger #checkbox-3:checked + label i:before {
+  transform: translate(5px, 8px) rotate(45deg);
+}
+
+/* line 56, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.offer__accordion .offer__trigger #checkbox-1:checked + label i:after,
+.offer__accordion .offer__trigger #checkbox-2:checked + label i:after,
+.offer__accordion .offer__trigger #checkbox-3:checked + label i:after {
+  transform: translate(-5px, 8px) rotate(-45deg);
+}
+
+/* line 63, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.offer__accordion .offer__trigger .checkbox {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  color: white;
+  cursor: pointer;
+  background-color: #434d57;
+}
+
+/* line 73, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.offer__accordion .offer__trigger .checkbox i {
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  right: 20px;
+}
+
+/* line 81, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.offer__accordion .offer__trigger .checkbox i:before, .offer__accordion .offer__trigger .checkbox i:after {
+  position: absolute;
+  content: '';
+  width: 16px;
+  height: 3px;
+  background-color: white;
+  transition: transform 250ms ease;
+}
+
+/* line 91, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.offer__accordion .offer__trigger .checkbox i:before {
+  transform: translate(-5px, 8px) rotate(45deg);
+}
+
+/* line 95, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.offer__accordion .offer__trigger .checkbox i:after {
+  transform: translate(5px, 8px) rotate(-45deg);
+}
+
+/* line 101, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.offer__accordion .offer__trigger .offer__content {
+  position: relative;
+  max-height: 1px;
+  padding: 0;
+  overflow-y: scroll;
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: whitesmoke;
+  transition: max-height 500ms ease-in-out;
+}
+
+/* line 111, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.offer__accordion .offer__trigger .offer__content p {
+  margin: 0 30px 30px;
+}
+
+/* line 118, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+#checkbox-1:checked ~ .content,
+#checkbox-2:checked ~ .content,
+#checkbox-3:checked ~ .content {
+  max-height: 350px;
+  transition: max-height 500ms ease-in-out;
+}
+
+/*# sourceMappingURL=style.css.map */
