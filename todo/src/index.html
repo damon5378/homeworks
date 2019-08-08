@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<!-- <meta name="viewport" content="width=device-width, initial-scale-1.0"> -->
-	<!-- <meta http-equiv="X-UA-Compatible" content="ie-edge"> -->
+	<meta name="viewport" content="width=device-width, initial-scale-1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 	<title>ToDo</title>
 </head>
 <body>
 
 	<header class="navbar">
-		<div class="container">
+		<div class="container-own">
 			<!-- <div class="navbar__logo">
 				<img src="img/logo.png" alt="">
 			</div> -->
@@ -33,7 +34,7 @@
 	<main>
 		<section class="section hero">
 			<img src="img/hero.jpg" alt="" class="hero__image">
-			<div class="container">
+			<div class="container-own">
 				<div class="hero__wrapper">
 					<h1 class="hero__title">Telrem Service</h1>
 					<h2 class="hero__subtitle">В Могилеве</h2>
@@ -41,7 +42,7 @@
 			</div>
 		</section>
 		<section class="offer" id="offer">
-			<div class="container">
+			<div class="container-own">
 			<h3 class="offer__title">Ремонт мобильных телефонов, планшетов, навигаторов любой сложности в Могилеве</h3>
 			<p class="offer__text">Сервисный центр "Телремсервис" (Могилев) выполняет качественный, профессиональный ремонт мобильных телефонов и планшетов стандарта GSM: Apple iPhone, iPad, Samsung, Nokia, Htc, Sony, Lg, Blackberry, Philips, Motorola, Lenovo, Asus, Huawei, Zte, Meizu, Texet, Prestigio, Keneksi и других любого уровня сложности. Мы успешно работаем в Могилеве с 2009 года, и на протяжении более 10 лет хорошо зарекомендовали себя в сфере услуг по ремонту планшетов, сотовых телефонов всех известных марок и их техническому обслуживанию.</p>
 			<p class="offer__text mrn">Наш сервисный центр имеет сертификат соответствия государственного образца. Срочный ремонт сотовых телефонов и планшетов осуществляется в минимальные сроки с применением специального оборудования и оригинальных запчастей, более половины поломок может быть устранено в Вашем присутствии, а при выявлении дополнительных неисправностей дальнейший ремонт смартфонов производится только после согласования всех деталей лично.</p>
@@ -70,6 +71,25 @@
 			</div>
 			<p class="offer__text">Мы ценим всех наших клиентов и работаем с каждым на результат. Мы быстро развиваемся и постоянно отслеживаем самые последние тенденции на рынке технического обслуживания и ремонта мобильных устройств. Мы не стоим на месте и используем самые новейшие, современные технологии и оборудование для ремонта цифровой техники, учитываем самые малейшие Ваши потребности. Наши сотрудники всегда готовы оказать самую профессиональную консультацию и ответить на любые Ваши вопросы, связанные с ремонтом гаджетов.</p>
 			<p class="offer__text mrn">Сервисный центр в Могилеве "Телремсервис" производит ремонт в минимальные сроки, включая оформление и ремонт по безналичному расчёту. В случае необходимости и целесообразности подготавливаем акты технических заключений для списания. Если Вы предпочитаете качественное обслуживание и ремонт в кротчайшие сроки, станьте нашим клиентом!</p>
+
+			<div class="timer">
+            <div class="timer-title">До конца акции осталось
+            </div>
+           <!--  <div class="timer-action">
+                До конца акции осталось
+            </div> -->
+
+            <div class="timer-numbers" id="timer">
+            	<img src="img/mac.png" alt="">
+                <span id="timer-days">19</span>
+                <span>:</span>
+                <span id="timer-hours">45</span>
+                <span>:</span>
+                <span id="timer-minutes">12</span>
+                <span id="timer-seconds"><sub>12</sub></span>
+            </div>
+        </div>
+
 			<div class="offer-block">
 			<div class="offer-block__garant">
 				<h2 class="offer-block__title">Гарантия качества выполненных работ</h2>
@@ -79,62 +99,169 @@
 				<img src="img/monitor.jpg" alt="">
 			</div>
 			</div>
-			
-			<div class="all">
-				<input type="checkbox" name="all" id="all" />
-				<label for="all"></label>
-</div> <!-- .all -->
 
-<div class="offer__accordion">
-	<div class="offer__trigger">
-		<input type="checkbox" id="checkbox-1" name="checkbox-1" />
-		<label for="checkbox-1" class="checkbox">
-			10 причин выбрать нас <i></i>
-		</label>
-		<div class="offer__content">
-			<p>The magic Indian is a mysterious spiritual force, and we're going to Cathedral Rock, and that's the vortex of the heart.You ever roasted doughnuts?These kind of things only happen for the first time once.Did you feel that? Look at me - I'm not out of breath anymore! 
+			<div id="accordion" class="accordion" style="max-width: 100%; margin: 0 auto;">
+    <div class="accordion-item show">
+      <div class="accordion-item-header">
+        10 причин выбрать нас:
+      </div>
+      <div class="accordion-item-content">
+        <ul class="accordion-list">
+        	<li class="accordion-list-li">- Качество обслуживания подтверждено сертификатом СТБ BY/112 04.08. 008 02216;</li>
+        	<li class="accordion-list-li">- Высококвалифицированные специалисты;</li>
+        	<li class="accordion-list-li">- Современное оборудование для ремонта;</li>
+        	<li class="accordion-list-li">- Оригинальные запчасти от производителей;</li>
+        	<li class="accordion-list-li">- Склад комплектующих для замены;</li>
+        	<li class="accordion-list-li">- Бесплатная диагностика;</li>
+        	<li class="accordion-list-li">- Возможен срочный ремонт;</li>
+        	<li class="accordion-list-li">- Удобное месторасположение;</li>
+        	<li class="accordion-list-li">- Система скидок для постоянных клиентов;</li>
+        	<li class="accordion-list-li">- Мы уверены в качестве работы и предоставляем гарантию до 6 месяцев.</li>
+        </ul>
+      </div>
+    </div>
 
-			<p>When you get lost in your imaginatory vagueness, your foresight will become a nimble vagrant.You ever roasted doughnuts?These kind of things only happen for the first time once.You gotta go through it to see there ain't nothing to it.It's good to yell at people and tell people that you're from Tennesee, so that way you'll be safe.</p>
+    <div class="accordion-item">
+      <div class="accordion-item-header">
+        Ремонт телефонов
+      </div>
+      <div class="accordion-item-content">
+        Мобильные телефоны и смартфоны – это сложная цифровая техника, которая может выходить из строя по разным причинам: из-за некорректной эксплуатации устройства; повреждений, полученных в результате падения или контакта с водой; нелицензионного программного обеспечения; производственного брака. Если в работе девайса появились сбои и их невозможно устранить доступными пользователям способами, рекомендуем обратиться в наш сервисный центр.
+      </div>
+    </div>
 
-			<p>The best way to communicate is compatible. Compatible communication is listening with open ears and an open mind, and not being fearful or judgemental about what you're hearing.Did you feel that? Look at me - I'm not out of breath anymore!These kind of things only happen for the first time once.</p>
-		</div>
-	</div>
-	
-	<div class="offer__trigger">
-		<input type="checkbox" id="checkbox-2" name="checkbox-2" />
-		<label for="checkbox-2" class="checkbox">
-			Ремонт телефонов <i></i>
-		</label>
-		<div class="offer__content">
-			<p>The magic Indian is a mysterious spiritual force, and we're going to Cathedral Rock, and that's the vortex of the heart.You ever roasted doughnuts?These kind of things only happen for the first time once.Did you feel that? Look at me - I'm not out of breath anymore! 
-
-			<p>When you get lost in your imaginatory vagueness, your foresight will become a nimble vagrant.You ever roasted doughnuts?These kind of things only happen for the first time once.You gotta go through it to see there ain't nothing to it.It's good to yell at people and tell people that you're from Tennesee, so that way you'll be safe.</p>
-
-			<p>The best way to communicate is compatible. Compatible communication is listening with open ears and an open mind, and not being fearful or judgemental about what you're hearing.Did you feel that? Look at me - I'm not out of breath anymore!These kind of things only happen for the first time once.</p>
-		</div>
-	</div>
-	
-	<div class="offer__trigger">
-		<input type="checkbox" id="checkbox-3" name="checkbox-3" />
-		<label for="checkbox-3" class="checkbox">
-			Ремонт планшетов <i></i>
-		</label>
-		<div class="offer__content">
-			<p>The magic Indian is a mysterious spiritual force, and we're going to Cathedral Rock, and that's the vortex of the heart.You ever roasted doughnuts?These kind of things only happen for the first time once.Did you feel that? Look at me - I'm not out of breath anymore! 
-
-			<p>When you get lost in your imaginatory vagueness, your foresight will become a nimble vagrant.You ever roasted doughnuts?These kind of things only happen for the first time once.You gotta go through it to see there ain't nothing to it.It's good to yell at people and tell people that you're from Tennesee, so that way you'll be safe.</p>
-
-			<p>The best way to communicate is compatible. Compatible communication is listening with open ears and an open mind, and not being fearful or judgemental about what you're hearing.Did you feel that? Look at me - I'm not out of breath anymore!These kind of things only happen for the first time once.</p>
-		</div>
-	</div>
-</div>
-
-
+    <div class="accordion-item">
+      <div class="accordion-item-header">
+        Ремонт планшетов
+      </div>
+      <div class="accordion-item-content">
+        Планшеты сравнительно недавно вошли в нашу жизнь, но уже успели стать неотъемлемой частью бытия современного человека. Они дают нам связь с миром, помогают в учебе и работе, наполняют разнообразием наш досуг, снабжают актуальной и полезной информацией. Потому для многих людей выход этого девайса из строя превращается в серьезную проблему. Но наш сервисный центр охотно готов помочь. Мы гарантируем высочайшее качество работы и отличный сервис.
+      </div>
+    </div>
 			</div>
+		</section>
+
+		<section class="repair">
+			<div class="container-own">
+				<div class="repair__title">
+					<h2 class="repair-title__text">Какой-то заголовок</h2>
+				</div>
+				<div class="repair__wrapper">
+					<div class="repair__card">
+						<h3 class="repair-card__title">Ремонт яблочной техники</h3>
+						<img src="img/apple.png" alt="" class="repair__apple">
+						<p class="repair__text">Ремонт продукции компании Apple - iPhone и iPad всех версий - один из основных профилей работы нашего сервисного центра. Наша отличительная особенность в данном сегменте - это профессионализм, наличие большого спектра запасных частей (от экранов до компонентных шлейфов) и адекватные цены.</p>
+					</div>
+					<div class="repair__card">
+						<h3 class="repair-card__title nokia">Ремонт телефонов Nokia</h3>
+						<img src="img/nokia.png" alt="" class="repair__nokia">
+						<p class="repair__text nokia__text">Специализированный сервисный центр NOKIA. Ремонт телефонов и смартфонов Нокиа. Большой опыт, оригинальные запчасти, адекватные цены.</p>
+					</div>
+					<div class="repair__card">
+						<h3 class="repair-card__title samsung">Ремонт телефонов Samsung</h3>
+						<img src="img/samsung.png" alt="" class="repair__samsung">
+						<p class="repair__text samsung__text">Профессиональный сервисный центр по ремонту телефонов и планшетов SAMSUNG. Актуальное обновление склада запасных частей. Оригинальные запчасти на весь модельный ряд. Ремонт смартфонов САМСУНГ в Могилеве.</p>
+					</div>
+					<div class="repair__card">
+						<h3 class="repair-card__title">Ремонт яблочной техники</h3>
+						<img src="img/apple.png" alt="" class="repair__apple">
+						<p class="repair__text">Ремонт продукции компании Apple - iPhone и iPad всех версий - один из основных профилей работы нашего сервисного центра. Наша отличительная особенность в данном сегменте - это профессионализм, наличие большого спектра запасных частей (от экранов до компонентных шлейфов) и адекватные цены.</p>
+					</div>
+					<div class="repair__card">
+						<h3 class="repair-card__title nokia">Ремонт телефонов Nokia</h3>
+						<img src="img/nokia.png" alt="" class="repair__nokia">
+						<p class="repair__text nokia__text">Специализированный сервисный центр NOKIA. Ремонт телефонов и смартфонов Нокиа. Большой опыт, оригинальные запчасти, адекватные цены.</p>
+					</div>
+					<div class="repair__card">
+						<h3 class="repair-card__title samsung">Ремонт телефонов Samsung</h3>
+						<img src="img/samsung.png" alt="" class="repair__samsung">
+						<p class="repair__text samsung__text">Профессиональный сервисный центр по ремонту телефонов и планшетов SAMSUNG. Актуальное обновление склада запасных частей. Оригинальные запчасти на весь модельный ряд. Ремонт смартфонов САМСУНГ в Могилеве.</p>
+					</div>
+					<div class="repair__card">
+						<h3 class="repair-card__title">Ремонт яблочной техники</h3>
+						<img src="img/apple.png" alt="" class="repair__apple">
+						<p class="repair__text">Ремонт продукции компании Apple - iPhone и iPad всех версий - один из основных профилей работы нашего сервисного центра. Наша отличительная особенность в данном сегменте - это профессионализм, наличие большого спектра запасных частей (от экранов до компонентных шлейфов) и адекватные цены.</p>
+					</div>
+					<div class="repair__card">
+						<h3 class="repair-card__title nokia">Ремонт телефонов Nokia</h3>
+						<img src="img/nokia.png" alt="" class="repair__nokia">
+						<p class="repair__text nokia__text">Специализированный сервисный центр NOKIA. Ремонт телефонов и смартфонов Нокиа. Большой опыт, оригинальные запчасти, адекватные цены.</p>
+					</div>
+					<div class="repair__card">
+						<h3 class="repair-card__title samsung">Ремонт телефонов Samsung</h3>
+						<img src="img/samsung.png" alt="" class="repair__samsung">
+						<p class="repair__text samsung__text">Профессиональный сервисный центр по ремонту телефонов и планшетов SAMSUNG. Актуальное обновление склада запасных частей. Оригинальные запчасти на весь модельный ряд. Ремонт смартфонов САМСУНГ в Могилеве.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="tabs">
+			<div id="service-block" class="service">
+        <div class="container">
+            <h2 class="tabs__title">Распространенные причины выхода из строя различных мобильных устройств</h2>
+            <div class="row service-header">
+                <div class="col-12 col-lg-4 service-header-tab active">Быстрый разряд <span>батареи</span></div>
+                <div class="col-12 col-lg-4 service-header-tab">Попадание <span>влаги</span></div>
+                <div class="col-12 col-lg-4 service-header-tab">Перезагрузка или <span>выключение</span></div>
+            </div>
+
+            <div class="service-tab row">
+                <div class="service-outer col-md-6 col-sm-6 col-12">
+                    <div class="service-inner">
+                        <div class="service-text">
+                            <p>Факторов может быть множество, мы разберем самые основные:</p>
+                            <ul class="service-tab__list">
+                            	<li class="service-tab-li">В первую очередь необходимо включить функцию энергосбережения (данная функция имеется практически во всех смартфонах (планшетах) большинства производителей). Поищите ее в настройках устройства.</li>
+                            	<li class="service-tab-li">Обязательно необходимо выключать функции Bluetooth, WI-FI и GPS если вы ими не пользуетесь в данный момент. Данные функции во включенном состоянии находятся в поиске устройств , что очень сильно повышает энергопотребление.</li>
+                            	<li class="service-tab-li">Установленные приложения так же могут влиять на энергопотребление. Если первые два пункта не повлияли на время работы смартфона (планшета), то необходимо сделать общий сброс на заводские настройки, НО ОБЯЗАТЕЛЬНО ПРЕДВАРИТЕЛЬНО СОХРАНИТЬ ВСЮ ИНФОРМАЦИЮ ИНАЧЕ ОНА БУДЕТ УТЕРЯНА), (так же отформатируйте карту памяти если она используется в устройстве).</li>
+                            	<li class="service-tab-li">Следующим шагом, при условии, что предыдущие пункты не помогли, необходимо попробовать поменять АКБ (батарею). В данном случае уже придется потратить деньги. Советуем покупать только ОРИГИНАЛЬНЫЕ батареи.</li>
+                            	<li class="service-tab-li">Если и замена батареи не помогла, то вам необходимо обратиться в наш специализированный сервисный центр по ремонту мобильных телефонов и планшетов, скорей всего в ваш смартфон (планшет) попала влага или какой то заводской дефект, который своими силами вы исправить не сможете.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <img src="img/batt.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="service-tab row d-none">
+                <div class="col-md-6 col-sm-6">
+                    <img src="img/image-8.png" alt="">
+                </div>
+                <div class="service-outer col-md-6 col-sm-6 col-12">
+                    <div class="service-inner">
+                        <p>Ни за что, ни когда не включайте любое ваше устройство после того как вы его намочили! Если даже телефон включился то это не значит, что он будет работать в дальнейшем долго и качественно. Жидкость будет окисляться во взаимодействии с электричеством и ваш смартфон (планшет) будет медленно и мучительно умирать...</p>
+                        <p>Первым делом необходимо вытащить АКБ (батарею) из телефона и не вставлять ее как минимум сутки, просушить телефон на батарее центрального отопления либо феном для сушки волос, а лучше сразу отнести в наш сервисный центр по ремонту мобильных телефонов и планшетов, где ваш смартфон (планшет) осмотрят на повреждения и высушат.</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="service-tab row d-none">
+                <div class="service-outer col-md-6 col-sm-6 col-12">
+                    <div class="service-inner">
+                        <p>Данная проблема чаще всего возникает из-за некорректных приложений, которые вы могли установить в ваш телефон. Решением данной проблемы является общий сброс на заводские настройки (ОБЯЗАТЕЛЬНО ПРЕДВАРИТЕЛЬНО СОХРАНИТЬ ВСЮ ИНФОРМАЦИЮ ИНАЧЕ ОНА БУДЕТ УТЕРЯНА), (так же отформатируйте карту памяти если она используется в устройстве). Если общий сброс не помогает, то необходимо отнести ваш смартфон (планшет) в наш специализированный сервисный центр по ремонту сотовых телефонов и планшетов, где произведут диагностику вашего аппарата, произведут смену программного обеспечения на последнюю версию или аппаратный ремонт.</p>
+                        <p>В завершении хотелось бы сказать, что смартфоны и планшеты сейчас идут на одном уровне с компьютерами и конечно же возможны сбои в работе, если возникают какие то проблемы при работе устройства (потерял сеть например или не запускается приложение) в первую очередь перезагрузите свой девайс, чаще всего достаточно этого действия.</p>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <img src="img/51.png" alt="">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
 		</section>
 	</main>
 
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script> -->
+	<script src="https://kit.fontawesome.com/696e09c7c1.js"></script>
 	<script src="script/index.js"></script>
 	<script src="script/script.js"></script>
 	

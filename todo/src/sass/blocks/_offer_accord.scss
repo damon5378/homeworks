@@ -1,123 +1,37 @@
-.all {
-	text-align: center;
+.accordion-item{
+	width: 53%;
+	margin: 0 auto;
 
-	input[type="checkbox"] {
-		display: none;
-
-		&:checked + label {
-			background-color: $belizehole;
-			color: white;
-
-			&:before {
-				content: 'Close All';
-			}
-		}
-	}
-
-	label {
-		position: relative;
-		margin: 0;
-		padding: 5px 30px;
-		font-size: 14px;
-		font-weight: 300;
-		color: $belizehole;
-		background-color: white;
-		border: 1px solid $belizehole;
-		border-radius: 99px;
-
-		&:before {
-			content: 'Open All';
-		}
-	}
 }
-
-.offer__accordion {
-	position: relative;
-	width: 80%;
-	margin: 50px auto;
-	box-shadow: 0 0 20px rgba(0,0,0,0.3);
-
-	.offer__trigger {
-
-		#checkbox-1,
-		#checkbox-2,
-		#checkbox-3 {
-			display: none;
-
-			&:checked + label {
-				background-color: slategray;
-
-				i {
-
-					&:before {
-						transform: translate(5px,8px) rotate(45deg);
-					}
-
-					&:after {
-						transform: translate(-5px,8px) rotate(-45deg);
-					}				
-				}
-			}
-		}
-
-		.checkbox {
-			position: relative;
-			display: block;
-			width: 100%;
-			margin: 0;
-			padding: 20px;
-			color: white;
-			cursor: pointer;
-			background-color: darken(slategray,20%);
-
-			i {
-				position: absolute;
-				display: inline-block;
-				width: 20px;
-				height: 20px;
-				right: 20px;
-				//float: right;
-
-				&:before,
-				&:after {
-					position: absolute;
-					content: '';
-					width: 16px;
-					height: 3px;
-					background-color: white;
-					transition: transform 250ms ease;
-				}
-
-				&:before {
-					transform: translate(-5px,8px) rotate(45deg);
-				}
-
-				&:after {
-					transform: translate(5px,8px) rotate(-45deg);
-				}
-			}
-		}
-
-		.offer__content {
-			position: relative;
-			max-height: 1px;
-			padding: 0;
-			overflow-y: scroll;
-			font-size: 14px;
-			line-height: 1.5;
-			background-color: whitesmoke;
-			transition: max-height 500ms ease-in-out;
-
-			p {
-				margin: 0 30px 30px;
-			}
-		}
-	}
+.accordion-item-header {
+  padding: 10px 15px;
+  background: #ed5565;
+  color: #fff;
+  cursor: pointer;
 }
-
-#checkbox-1:checked ~ .content,
-#checkbox-2:checked ~ .content,
-#checkbox-3:checked ~ .content {
-	max-height: 350px;
-	transition: max-height 500ms ease-in-out;
+.accordion-item-content {
+  background: #383838;
+  color: #fff;
+  display: none;
+  line-height: 1.6;
+}
+.accordion-item.show .accordion-item-content {
+  padding: 10px 15px;
+  display: block;
+}
+.accordion-item.show .accordion-item-header {
+  background: #da4453;
+  color: #fff;
+}
+.accordion-list{
+	list-style: none;
+}
+.accordion-list-li{
+	line-height: 2.4;
+}
+.accordion-item {
+  margin-bottom: .25rem;
+}
+.accordion-item:last-child {
+  margin-bottom: 0;
 }

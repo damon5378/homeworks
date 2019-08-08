@@ -396,23 +396,46 @@ template {
   outline: none;
   margin: 0;
   padding: 0;
+  font-family: 'Cuprum', sans-serif;
 }
 
-/* line 8, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+/* line 9, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
 img {
   max-width: 100%;
 }
 
-/* line 10, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
-.container {
+/* line 11, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+.container-own {
   width: 1170px;
   margin: auto;
+}
+
+/* line 14, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+p {
+  line-height: 1.4;
+}
+
+/* line 16, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+.fa-apple {
+  color: silver;
+  display: inline-block;
+  text-align: center;
+}
+
+/* line 20, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+.nokia {
+  margin-top: -81px;
+}
+
+/* line 22, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+.samsung {
+  margin-top: -81px;
 }
 
 /* line 1, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
 .navbar {
   padding: 15px 0;
-  background-color: purple;
+  background-color: #db4453;
 }
 
 /* line 4, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
@@ -465,15 +488,9 @@ img {
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
-  font-family: 'Cuprum', sans-serif;
 }
 
-/* line 7, D:/Уроки/COURSE/todo/src/sass/blocks/_offer.sass */
-.offer__text {
-  line-height: 1.4;
-}
-
-/* line 9, D:/Уроки/COURSE/todo/src/sass/blocks/_offer.sass */
+/* line 6, D:/Уроки/COURSE/todo/src/sass/blocks/_offer.sass */
 .offer__image {
   display: flex;
   justify-content: space-between;
@@ -481,19 +498,25 @@ img {
   margin-bottom: 40px;
 }
 
-/* line 14, D:/Уроки/COURSE/todo/src/sass/blocks/_offer.sass */
+/* line 11, D:/Уроки/COURSE/todo/src/sass/blocks/_offer.sass */
 .offer-block {
   display: flex;
   flex-basis: 50%;
   margin-top: 40px;
 }
 
+/* line 15, D:/Уроки/COURSE/todo/src/sass/blocks/_offer.sass */
+.offer-block__title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 /* line 18, D:/Уроки/COURSE/todo/src/sass/blocks/_offer.sass */
 .offer__card {
-  background: white;
+  background: #db4453;
   padding: 30px;
   margin-right: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(56, 56, 56, 0.5);
 }
 
 /* line 23, D:/Уроки/COURSE/todo/src/sass/blocks/_offer.sass */
@@ -507,144 +530,239 @@ img {
 }
 
 /* line 1, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
-.all {
+.accordion-item {
+  width: 53%;
+  margin: 0 auto;
+}
+
+/* line 6, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.accordion-item-header {
+  padding: 10px 15px;
+  background: #ed5565;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* line 12, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.accordion-item-content {
+  background: #383838;
+  color: #fff;
+  display: none;
+  line-height: 1.6;
+}
+
+/* line 18, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.accordion-item.show .accordion-item-content {
+  padding: 10px 15px;
+  display: block;
+}
+
+/* line 22, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.accordion-item.show .accordion-item-header {
+  background: #da4453;
+  color: #fff;
+}
+
+/* line 26, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.accordion-list {
+  list-style: none;
+}
+
+/* line 29, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.accordion-list-li {
+  line-height: 2.4;
+}
+
+/* line 32, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.accordion-item {
+  margin-bottom: .25rem;
+}
+
+/* line 35, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.accordion-item:last-child {
+  margin-bottom: 0;
+}
+
+/* line 2, D:/Уроки/COURSE/todo/src/sass/blocks/_repair.sass */
+.repair-title__text {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 6, D:/Уроки/COURSE/todo/src/sass/blocks/_repair.sass */
+.repair-card__title {
   text-align: center;
 }
 
-/* line 4, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
-.all input[type="checkbox"] {
-  display: none;
+/* line 8, D:/Уроки/COURSE/todo/src/sass/blocks/_repair.sass */
+.repair__card {
+  max-width: 30%;
+  background: white;
+  padding: 30px;
+  margin-right: 15px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 0 13px rgba(219, 68, 83, 0.5);
 }
 
-/* line 7, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
-.all input[type="checkbox"]:checked + label {
-  background-color: #2980b9;
-  color: white;
+/* line 19, D:/Уроки/COURSE/todo/src/sass/blocks/_repair.sass */
+.repair__card:hover {
+  box-shadow: 0 0 15px rgba(219, 68, 83, 0.7);
 }
 
-/* line 11, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
-.all input[type="checkbox"]:checked + label:before {
-  content: 'Close All';
+/* line 21, D:/Уроки/COURSE/todo/src/sass/blocks/_repair.sass */
+.repair__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
-/* line 17, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
-.all label {
-  position: relative;
-  margin: 0;
-  padding: 5px 30px;
-  font-size: 14px;
-  font-weight: 300;
-  color: #2980b9;
-  background-color: white;
-  border: 1px solid #2980b9;
-  border-radius: 99px;
+/* line 26, D:/Уроки/COURSE/todo/src/sass/blocks/_repair.sass */
+.repair__text {
+  text-align: justify;
 }
 
-/* line 28, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
-.all label:before {
-  content: 'Open All';
+/* line 28, D:/Уроки/COURSE/todo/src/sass/blocks/_repair.sass */
+.repair__apple {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-/* line 34, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
-.offer__accordion {
-  position: relative;
-  width: 80%;
-  margin: 50px auto;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+/* line 31, D:/Уроки/COURSE/todo/src/sass/blocks/_repair.sass */
+.repair__nokia {
+  margin-top: -90px;
+  margin-bottom: 63px;
 }
 
-/* line 42, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
-.offer__accordion .offer__trigger #checkbox-1,
-.offer__accordion .offer__trigger #checkbox-2,
-.offer__accordion .offer__trigger #checkbox-3 {
-  display: none;
+/* line 34, D:/Уроки/COURSE/todo/src/sass/blocks/_repair.sass */
+.repair__samsung {
+  margin-top: -160px;
 }
 
-/* line 47, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
-.offer__accordion .offer__trigger #checkbox-1:checked + label,
-.offer__accordion .offer__trigger #checkbox-2:checked + label,
-.offer__accordion .offer__trigger #checkbox-3:checked + label {
-  background-color: slategray;
+/* line 36, D:/Уроки/COURSE/todo/src/sass/blocks/_repair.sass */
+.nokia__text {
+  margin-top: -166px;
 }
 
-/* line 52, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
-.offer__accordion .offer__trigger #checkbox-1:checked + label i:before,
-.offer__accordion .offer__trigger #checkbox-2:checked + label i:before,
-.offer__accordion .offer__trigger #checkbox-3:checked + label i:before {
-  transform: translate(5px, 8px) rotate(45deg);
+/* line 38, D:/Уроки/COURSE/todo/src/sass/blocks/_repair.sass */
+.samsung__text {
+  margin-top: -120px;
 }
 
-/* line 56, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
-.offer__accordion .offer__trigger #checkbox-1:checked + label i:after,
-.offer__accordion .offer__trigger #checkbox-2:checked + label i:after,
-.offer__accordion .offer__trigger #checkbox-3:checked + label i:after {
-  transform: translate(-5px, 8px) rotate(-45deg);
+/* line 2, D:/Уроки/COURSE/todo/src/sass/blocks/_tabs.sass */
+.tabs__title {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-/* line 63, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
-.offer__accordion .offer__trigger .checkbox {
-  position: relative;
-  display: block;
-  width: 100%;
-  margin: 0;
-  padding: 20px;
-  color: white;
+/* line 5, D:/Уроки/COURSE/todo/src/sass/blocks/_tabs.sass */
+.service {
+  padding: 5rem;
+}
+
+/* line 7, D:/Уроки/COURSE/todo/src/sass/blocks/_tabs.sass */
+.service-header {
+  border: 1px solid #db4453;
+  border-radius: 3rem;
+  margin-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+/* line 19, D:/Уроки/COURSE/todo/src/sass/blocks/_tabs.sass */
+.service-header-tab {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  height: auto;
+  text-transform: uppercase;
+  vertical-align: middle;
+  padding: .5rem 1rem;
   cursor: pointer;
-  background-color: #434d57;
+  margin: 0;
+  font-weight: 400;
+  color: #db4453;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
-/* line 73, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
-.offer__accordion .offer__trigger .checkbox i {
-  position: absolute;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  right: 20px;
+/* line 33, D:/Уроки/COURSE/todo/src/sass/blocks/_tabs.sass */
+.service-header-tab.active {
+  background-color: #db4453;
+  border-radius: 3rem;
+  color: #fff !important;
 }
 
-/* line 81, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
-.offer__accordion .offer__trigger .checkbox i:before, .offer__accordion .offer__trigger .checkbox i:after {
-  position: absolute;
-  content: '';
-  width: 16px;
-  height: 3px;
-  background-color: white;
-  transition: transform 250ms ease;
+/* line 37, D:/Уроки/COURSE/todo/src/sass/blocks/_tabs.sass */
+.service-header-tab span {
+  font-weight: 700;
 }
 
-/* line 91, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
-.offer__accordion .offer__trigger .checkbox i:before {
-  transform: translate(-5px, 8px) rotate(45deg);
+/* line 39, D:/Уроки/COURSE/todo/src/sass/blocks/_tabs.sass */
+.service .description {
+  font-weight: 300;
+  color: #19b5fe;
 }
 
-/* line 95, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
-.offer__accordion .offer__trigger .checkbox i:after {
-  transform: translate(5px, 8px) rotate(-45deg);
+/* line 42, D:/Уроки/COURSE/todo/src/sass/blocks/_tabs.sass */
+.service .service-outer {
+  text-align: left;
 }
 
-/* line 101, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
-.offer__accordion .offer__trigger .offer__content {
-  position: relative;
-  max-height: 1px;
-  padding: 0;
-  overflow-y: scroll;
-  font-size: 14px;
-  line-height: 1.5;
-  background-color: whitesmoke;
-  transition: max-height 500ms ease-in-out;
+/* line 44, D:/Уроки/COURSE/todo/src/sass/blocks/_tabs.sass */
+.service-inner {
+  text-align: justify;
 }
 
-/* line 111, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
-.offer__accordion .offer__trigger .offer__content p {
-  margin: 0 30px 30px;
+/* line 46, D:/Уроки/COURSE/todo/src/sass/blocks/_tabs.sass */
+.service img {
+  width: 100%;
 }
 
-/* line 118, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
-#checkbox-1:checked ~ .content,
-#checkbox-2:checked ~ .content,
-#checkbox-3:checked ~ .content {
-  max-height: 350px;
-  transition: max-height 500ms ease-in-out;
+/* line 1, D:/Уроки/COURSE/todo/src/sass/blocks/_timer.sass */
+.timer {
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+}
+
+/* line 4, D:/Уроки/COURSE/todo/src/sass/blocks/_timer.sass */
+.timer-title, .timer-action {
+  font-weight: 300;
+}
+
+/* line 6, D:/Уроки/COURSE/todo/src/sass/blocks/_timer.sass */
+.timer-title {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* line 10, D:/Уроки/COURSE/todo/src/sass/blocks/_timer.sass */
+.timer-action {
+  margin-top: 3rem;
+}
+
+/* line 12, D:/Уроки/COURSE/todo/src/sass/blocks/_timer.sass */
+.timer-numbers {
+  font-size: 5rem;
+  text-align: center;
+  color: #db4453;
+}
+
+/* line 16, D:/Уроки/COURSE/todo/src/sass/blocks/_timer.sass */
+#timer-seconds {
+  font-size: 26px;
 }
 
 /*# sourceMappingURL=style.css.map */
