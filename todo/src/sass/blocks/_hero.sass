@@ -7,20 +7,65 @@
 	height: 100vh
 
 	&__title
-		font-size: 68px
+		font-size: 9rem
 		color: $hero-title
 		position: absolute
-		top: 0
+		top: 5%
 		left: 50%
 		transform: translate(-50%, -50%)
 	&__subtitle
-		font-size: 53px
+		font-size: 6rem
 		position: absolute
-		top: 25%
+		top: 37%
 		left: 50%
 		transform: translate(-50%, -50%)
 	&__wrapper
 		text-align: center
 		text-transform: uppercase
-		
+@media (max-width: 1920px)
+	.hero
+		&__title
+			font-size: 7rem
+			top: 3%
+		&__subtitle
+			font-size: 4rem
+			top: 36%
+@media (max-width: 1366px)
+	.hero
+		&__title
+			font-size: 5rem
+			top: 3%
+		&__subtitle
+			font-size: 3rem
+			top: 37%
+@media (max-width: 1170px)
+	.hero
+		&__title
+			top: 2%
+		&__subtitle
+			top: 33%
+@media (max-width: 1024px)
+	.hero
+		&__title
+			font-size: 3rem
+			top: 3%
+		&__subtitle
+			font-size: 2rem
+			top: 30%
+@media (max-width: 768px)
+	.hero
+		&__title
+			font-size: 2rem
+			top: 1%
+		&__subtitle
+			top: 22%
+@media (max-width: 576px)
+	.hero
+		&__title
+			font-size: 2rem
+			top: 1%
+			left: 65%
+		&__subtitle
+			top: 22%
+			left: 65%
 
