@@ -455,10 +455,12 @@ p {
 .hero {
   position: relative;
   filter: brightness(30%);
-  height: 100%;
+  background: url("../img/hero.jpg");
+  background-size: cover;
+  height: 100vh;
 }
 
-/* line 6, D:/Уроки/COURSE/todo/src/sass/blocks/_hero.sass */
+/* line 9, D:/Уроки/COURSE/todo/src/sass/blocks/_hero.sass */
 .hero__title {
   font-size: 68px;
   color: #fc1129;
@@ -468,16 +470,16 @@ p {
   transform: translate(-50%, -50%);
 }
 
-/* line 13, D:/Уроки/COURSE/todo/src/sass/blocks/_hero.sass */
+/* line 16, D:/Уроки/COURSE/todo/src/sass/blocks/_hero.sass */
 .hero__subtitle {
   font-size: 53px;
   position: absolute;
-  top: 21%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-/* line 19, D:/Уроки/COURSE/todo/src/sass/blocks/_hero.sass */
+/* line 22, D:/Уроки/COURSE/todo/src/sass/blocks/_hero.sass */
 .hero__wrapper {
   text-align: center;
   text-transform: uppercase;
