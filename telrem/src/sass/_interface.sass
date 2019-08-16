@@ -1,0 +1,67 @@
+*
+	box-sizing: border-box
+	outline: none
+	margin: 0
+	padding: 0
+	font-family: 'Cuprum', sans-serif
+// body
+// 	+reg
+img
+	max-width: 100%
+.container-own
+	width: 1170px
+	margin: auto
+p
+	line-height: 1.4
+.fa-apple
+	color: silver
+	display: inline-block
+	text-align: center
+.nokia
+	margin-top: -81px
+.samsung
+	margin-top: -81px
+.form
+	margin-top: 30px
+	margin-bottom: 30px
+	&__title
+		font-size: 30px
+		text-align: center
+		line-height: 1.4
+		display: block
+	&__control
+		margin-top: 30px
+		margin-bottom: 30px
+		padding: 15px
+		width: 33%
+		border-radius: 25px
+		border: 1px solid #db4453
+.btn
+	display: flex
+	justify-content: center
+	background: #db4453
+	color: #fff
+	padding: 15px
+	border-radius: 25px
+	margin-top: 30px
+	width: 33%
+	margin: 0 auto
+
+@media(max-width: 1170px)
+	.container-own
+		width: 90%
+@media(max-width: 992px)
+	.form
+		&__control
+			display: flex
+			flex-wrap: wrap
+			margin: 0 auto
+			margin-top: 30px
+			width: 100%
+	.btn
+		margin-top: 30px
+@media(max-width: 768px)
+	.container-own
+		width: 80%
+
+

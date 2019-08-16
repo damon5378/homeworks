@@ -1,0 +1,81 @@
+.hero
+	position: relative
+	&__image
+	filter: brightness(30%)
+	background: url("../img/hero.jpg") center
+	background-size: cover
+	height: 100vh
+
+	&__title
+		font-size: 9rem
+		color: $hero-title
+		position: absolute
+		top: 5%
+		left: 50%
+		transform: translate(-50%, -50%)
+	&__subtitle
+		font-size: 6rem
+		position: absolute
+		top: 37%
+		left: 50%
+		transform: translate(-50%, -50%)
+	&__wrapper
+		text-align: center
+		text-transform: uppercase
+@media (max-width: 1920px)
+	.hero
+		&__title
+			font-size: 7rem
+			top: 7%
+			left: 49%
+		&__subtitle
+			font-size: 4rem
+			top: 76%
+			left: 59%
+@media (max-width: 1366px)
+	.hero
+		&__title
+			font-size: 4.2rem
+			top: 7%
+		&__subtitle
+			font-size: 3.3rem
+			top: 30%
+			left: 50%
+@media (max-width: 1170px)
+	.hero
+		&__title
+			top: 12%
+		&__subtitle
+			top: 33%
+@media (max-width: 1024px)
+	.hero
+		&__title
+			font-size: 3.3rem
+			top: 16%
+		&__subtitle
+			font-size: 2.7rem
+			top: 34%
+@media (max-width: 992px)
+	.hero
+		&__title
+			left: 50%
+		&__subtitle
+			left: 50%
+@media (max-width: 768px)
+	.hero
+		&__title
+			font-size: 3rem
+			top: 16%
+		&__subtitle
+			top: 34%
+			left: 49%
+@media (max-width: 576px)
+	.hero
+		&__title
+			font-size: 2.7rem
+			top: 17%
+			left: 50%
+		&__subtitle
+			top: 34%
+			left: 49%
+

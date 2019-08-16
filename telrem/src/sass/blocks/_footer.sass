@@ -1,0 +1,32 @@
+.footer
+	background: #db4453
+	color: #fff
+	padding: 40px 40px
+	&__wrapper
+		display: flex
+		justify-content: space-between
+	&__text
+		width: 300px
+	&__title
+		text-transform: uppercase
+.vk-center
+	display: flex
+	justify-content: center
+.phone
+	display: block
+	text-decoration: none
+	color: #fff
+	&:hover
+		text-decoration: none
+@media(max-width: 768px)
+	.hide-block
+		display: none
+@media(max-width: 576px)
+	.footer
+		&__text
+			width: 265px
+		&__title
+			font-size: 20px
+@media(max-width: 320px)
+	.hide-block-social
+		display: none
