@@ -1,7 +1,9 @@
 .tabs
   &__title
     text-align: center
+    display: block
     margin-bottom: 50px
+    font-size: 30px
 .service
   padding: 5rem
 .service-header 
@@ -50,3 +52,27 @@
     font-size: 1rem
   .hide-img
     display: none
+@media (max-width: 768px)
+  .accordion-item
+    width: 81%
+  .tabs
+    &__title
+      font-size: 25px
+@media (max-width: 320px)
+  .tabs
+    &__title
+      text-align: left
+      display: block
+      width: 225px
+      margin-left: -33px
+      font-size: 20px
+  .row
+    margin-right: -60px
+    margin-left: -60px
+  .container
+    padding-right: 0
+    padding-left: 0
+  .service-header-tab
+    font-size: .9rem
+  .accordion-item
+    width: 81%
