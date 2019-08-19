@@ -58,52 +58,94 @@ const ourOffer = document.querySelector('.offer__image');
     };
     tabs();
 
+    //Anchor
+      $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 2000);
+    });
+      $('.menu-btn').on('click', function(event){
+        event.preventDefault;
+        $(this).toggleClass('menu-btn_active');
+        $('.menu-nav').toggleClass('menu-nav_active')
+      });
+
+      //UpButton
+
+  var top_show = 1000; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
+  var delay = 2000; // Задержка прокрутки
+  $(document).ready(function() {
+    $(window).scroll(function () { // При прокрутке попадаем в эту функцию
+      /* В зависимости от положения полосы прокрукти и значения top_show, скрываем или открываем кнопку "Наверх" */
+      if ($(this).scrollTop() > top_show) $('#back-top').fadeIn();
+      else $('#back-top').fadeOut();
+    });
+    $('#back-top').click(function () { // При клике по кнопке "Наверх" попадаем в эту функцию
+      /* Плавная прокрутка наверх */
+      $('body, html').animate({
+        scrollTop: 0
+      }, delay);
+    });
+  });
+
     //Timer
-    function countTimer(deadline){
-        let timerDays = document.querySelector('#timer-days'),
-            timerHours = document.querySelector('#timer-hours'),
-            timerMinutes = document.querySelector('#timer-minutes'),
-            timerSeconds = document.querySelector('#timer-seconds');
+    // function countTimer(deadline){
+    //     let timerDays = document.querySelector('#timer-days'),
+    //         timerHours = document.querySelector('#timer-hours'),
+    //         timerMinutes = document.querySelector('#timer-minutes'),
+    //         timerSeconds = document.querySelector('#timer-seconds');
 
 
-        function getTimeRemaining(){
-            let dateStop = new Date(deadline).getTime(),
-                dateNow = new Date().getTime(),
-                timeRemaining = (dateStop - dateNow) / 1000,
-                seconds = Math.floor(timeRemaining % 60),
-                minutes = Math.floor((timeRemaining / 60) % 60),
-                hours = Math.floor(timeRemaining / 60 / 60) % 24,
-                days = Math.floor(timeRemaining / 60 / 60 / 24);
-                days = (days < 10) ? "0" + days : days;
-                hours = (hours < 10) ? "0" + hours : hours;
-                minutes = (minutes < 10) ? "0" + minutes : minutes;
-                seconds = (seconds < 10) ? "0" + seconds : seconds;
-                    return {timeRemaining, days, hours, minutes, seconds};
-                }
+    //     function getTimeRemaining(){
+    //         let dateStop = new Date(deadline).getTime(),
+    //             dateNow = new Date().getTime(),
+    //             timeRemaining = (dateStop - dateNow) / 1000,
+    //             seconds = Math.floor(timeRemaining % 60),
+    //             minutes = Math.floor((timeRemaining / 60) % 60),
+    //             hours = Math.floor(timeRemaining / 60 / 60) % 24,
+    //             days = Math.floor(timeRemaining / 60 / 60 / 24);
+    //             days = (days < 10) ? "0" + days : days;
+    //             hours = (hours < 10) ? "0" + hours : hours;
+    //             minutes = (minutes < 10) ? "0" + minutes : minutes;
+    //             seconds = (seconds < 10) ? "0" + seconds : seconds;
+    //                 return {timeRemaining, days, hours, minutes, seconds};
+    //             }
 
-        function updateClock(){
-            let timer = getTimeRemaining();
+    //     function updateClock(){
+    //         let timer = getTimeRemaining();
             
-            timerDays.textContent = timer.days;
-            timerHours.textContent = timer.hours;
-            timerMinutes.textContent = timer.minutes;
-            timerSeconds.textContent = timer.seconds;
-            if(timer.timeRemaining > 0) {
-                setInterval(updateClock, 1000);
-            } else {
-                clearInterval(updateClock);
-                timerDays.textContent = '00';
-                timerHours.textContent = '00';
-                timerMinutes.textContent = '00';
-                timerSeconds.textContent = '00';
-            }
+    //         timerDays.textContent = timer.days;
+    //         timerHours.textContent = timer.hours;
+    //         timerMinutes.textContent = timer.minutes;
+    //         timerSeconds.textContent = timer.seconds;
+    //         if(timer.timeRemaining > 0) {
+    //             setInterval(updateClock, 1000);
+    //         } else {
+    //             clearInterval(updateClock);
+    //             timerDays.textContent = '00';
+    //             timerHours.textContent = '00';
+    //             timerMinutes.textContent = '00';
+    //             timerSeconds.textContent = '00';
+    //         }
             
-        }
+    //     }
         
-        updateClock();
-    }
+    //     updateClock();
+    // }
     
-    countTimer('24 august 2019 17:00:00');
+    // countTimer('24 august 2019 17:00:00');
+
+    //Map
+    var map = $('.map');
+    var mapTop = map.offset().top;
+    $(window).bind('scroll', function(){
+    var windowTop = $(this).scrollTop();
+     if(windowTop > mapTop) {
+    $('#map').html('<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af879d136aeba89e9b2553007c133a4b23705f1c974b35d348d2d414fac1d0325&amp;width=100%&amp;height=607&amp;lang=ru_RU&amp;scroll=false"></script>></script>')
+    $(window).unbind('scroll');
+    }
+  });
 
 
 });

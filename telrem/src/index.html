@@ -17,17 +17,14 @@
 			<!-- <div class="navbar__logo">
 				<img src="img/logo.png" alt="">
 			</div> -->
-			<nav class="navbar__wrapper">
-			<a href="#" class="navbar__link">Главная</a>
-			<a href="#" class="navbar__link">Услуги</a>
-			<a href="#" class="navbar__link">Apple</a>
-			<a href="#" class="navbar__link">Samsung</a>
-			<a href="#" class="navbar__link">Ремонт планшетов</a>
-			<a href="#" class="navbar__link">Раскодировка</a>
-			<a href="#" class="navbar__link">Навигатор</a>
-			<a href="#" class="navbar__link">Акции</a>
-			<a href="#" class="navbar__link">Инфо</a>
-			<a href="#" class="navbar__link">Вопросы</a>
+			<nav class="navbar__wrapper" id="menu">
+			<a href="#home" class="navbar__link">Главная</a>
+			<a href="#repairtablets" class="navbar__link">Ремонт планшетов</a>
+			<a href="#services" class="navbar__link">Услуги</a>
+			<a href="#decoding" class="navbar__link">Раскодировка</a>
+			<a href="#navigator" class="navbar__link">Навигатор</a>
+			<a href="#info" class="navbar__link">Инфо</a>
+			<a href="#questions" class="navbar__link">Вопросы</a>
 		</nav>
 		</div>
 		
@@ -56,8 +53,12 @@
 				</form>
 			</div>
 		</section>
+
+	
+
 		<section class="offer" id="offer">
 			<div class="container-own">
+				<a id="repairtablets"></a>
 			<h3 class="offer__title">Ремонт мобильных телефонов, планшетов, навигаторов любой сложности в Могилеве</h3>
 			<p class="offer__text">Сервисный центр "Телремсервис" (Могилев) выполняет качественный, профессиональный ремонт мобильных телефонов и планшетов стандарта GSM: Apple iPhone, iPad, Samsung, Nokia, Htc, Sony, Lg, Blackberry, Philips, Motorola, Lenovo, Asus, Huawei, Zte, Meizu, Texet, Prestigio, Keneksi и других любого уровня сложности. Мы успешно работаем в Могилеве с 2009 года, и на протяжении более 10 лет хорошо зарекомендовали себя в сфере услуг по ремонту планшетов, сотовых телефонов всех известных марок и их техническому обслуживанию.</p>
 			<p class="offer__text mrn">Наш сервисный центр имеет сертификат соответствия государственного образца. Срочный ремонт сотовых телефонов и планшетов осуществляется в минимальные сроки с применением специального оборудования и оригинальных запчастей, более половины поломок может быть устранено в Вашем присутствии, а при выявлении дополнительных неисправностей дальнейший ремонт смартфонов производится только после согласования всех деталей лично.</p>
@@ -102,14 +103,19 @@
 			<p class="offer__text">Мы ценим всех наших клиентов и работаем с каждым на результат. Мы быстро развиваемся и постоянно отслеживаем самые последние тенденции на рынке технического обслуживания и ремонта мобильных устройств. Мы не стоим на месте и используем самые новейшие, современные технологии и оборудование для ремонта цифровой техники, учитываем самые малейшие Ваши потребности. Наши сотрудники всегда готовы оказать самую профессиональную консультацию и ответить на любые Ваши вопросы, связанные с ремонтом гаджетов.</p>
 			<p class="offer__text mrn">Сервисный центр в Могилеве "Телремсервис" производит ремонт в минимальные сроки, включая оформление и ремонт по безналичному расчёту. В случае необходимости и целесообразности подготавливаем акты технических заключений для списания. Если Вы предпочитаете качественное обслуживание и ремонт в кротчайшие сроки, станьте нашим клиентом!</p>
 		</section>
-			<div class="timer">
+
+		<section class="section map">
+		<div id="map">
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af879d136aeba89e9b2553007c133a4b23705f1c974b35d348d2d414fac1d0325&amp;width=100%&amp;height=607&amp;lang=ru_RU&amp;scroll=false"></script>
+		</div>
+			<!-- <div class="timer">
             <div class="timer-title">До конца акции осталось
-            </div>
+            </div> -->
            <!--  <div class="timer-action">
                 До конца акции осталось
             </div> -->
 
-            <div class="timer-numbers" id="timer">
+            <!-- <div class="timer-numbers" id="timer">
             	<img src="img/mac.png" alt="" class="mac">
             	<div class="timer__wrapper">
             		<span id="timer-days">19</span>
@@ -156,7 +162,7 @@
       <td><strong>Замена корпуса iPhone  белый, черный (задняя крышка, вставки, стекла, боковина)</strong></td>
       <td>Демонтаж всех компонентов старого корпуса, монтаж в новый (электро-механический ремонт 2-ой категории), профилактика и чистка установливаемых узлов, диагностика.</td>
       <td>80</td>
-    </tr>					
+    </tr>	 -->				
     <!-- <tr>
       <td><strong></strong></td>
       <td></td>
@@ -182,8 +188,8 @@
       <td>$.noop</td>
       <td>The callback fired after the hide/conceal</td>
     </tr> -->
-  </tbody>
-</table>
+  <!-- </tbody>
+</table> -->
 </div>
         </section>
 			<div class="container-own">
@@ -251,7 +257,8 @@
 		<section class="repair">
 			<div class="container-own">
 				<div class="repair__title">
-					<h2 class="repair-title__text">Какой-то заголовок</h2>
+					<a id="services"></a>
+					<h2 class="repair-title__text">Наши услуги</h2>
 				</div>
 				<div class="repair__wrapper">
 					<div class="repair__card">
@@ -394,6 +401,10 @@
 			</div>
 		</div>
 	</footer>
+
+	<div id="back-top">
+		<a href="#" onclick="return up()">ВВЕРХ</a>  
+	</div>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
 	<script src="script/jquery.ripples-min.js"></script>
