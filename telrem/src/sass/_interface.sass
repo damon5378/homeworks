@@ -6,13 +6,20 @@
 	font-family: 'Cuprum', sans-serif
 // body
 // 	+reg
+body
+	overflow-y: scroll
+	overflow-x: hidden
 img
 	max-width: 100%
 .container-own
 	width: 1170px
 	margin: auto
+a
+	background-color: transparent
 p
 	line-height: 1.4
+ul, p, li
+	font-size: 18px
 .fa-apple
 	color: silver
 	display: inline-block
@@ -21,6 +28,8 @@ p
 	margin-top: -81px
 .samsung
 	margin-top: -81px
+.map
+	margin-top: 30px
 .form
 	margin-top: 30px
 	margin-bottom: 30px
@@ -35,6 +44,12 @@ p
 		padding: 15px
 		width: 33%
 		border-radius: 25px
+		border: 1px solid #db4453
+	&__message
+		padding: 15px
+		width: 100%
+		border-radius: 25px
+		margin-bottom: 30px
 		border: 1px solid #db4453
 .btn
 	display: flex
@@ -94,8 +109,10 @@ p
 			margin: 0 auto
 			margin-top: 30px
 			width: 100%
+		&__message
+			margin-top: 30px
 	.btn
-		margin-top: 30px
+		margin-top: 10px
 @media(max-width: 768px)
 	.container-own
 		width: 80%
