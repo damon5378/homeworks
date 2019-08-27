@@ -563,7 +563,7 @@ ul, p, li {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 415px) {
   /* line 125, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
   .btn {
     width: 100%;
@@ -859,7 +859,7 @@ ul, p, li {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 415px) {
   /* line 96, D:/Уроки/COURSE/todo/src/sass/blocks/_hero.sass */
   .hero__title {
     font-size: 2.2rem;
@@ -867,6 +867,17 @@ ul, p, li {
   /* line 100, D:/Уроки/COURSE/todo/src/sass/blocks/_hero.sass */
   .hero__subtitle {
     font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 320px) {
+  /* line 106, D:/Уроки/COURSE/todo/src/sass/blocks/_hero.sass */
+  .hero__title {
+    font-size: 2rem;
+  }
+  /* line 108, D:/Уроки/COURSE/todo/src/sass/blocks/_hero.sass */
+  .hero__subtitle {
+    font-size: 1.7rem;
   }
 }
 
@@ -1245,7 +1256,7 @@ ul, p, li {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 415px) {
   /* line 62, D:/Уроки/COURSE/todo/src/sass/blocks/_tabs.sass */
   .tabs {
     display: none;
@@ -1611,7 +1622,7 @@ tbody:hover tr:hover td {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 415px) {
   /* line 66, D:/Уроки/COURSE/todo/src/sass/blocks/_footer.sass */
   .footer .container-own {
     width: 50%;
@@ -1630,7 +1641,7 @@ tbody:hover tr:hover td {
   .socials {
     margin-bottom: 20px;
   }
-  /* line 77, D:/Уроки/COURSE/todo/src/sass/blocks/_footer.sass */
+  /* line 76, D:/Уроки/COURSE/todo/src/sass/blocks/_footer.sass */
   .footer, h3, p, a {
     font-size: 10px;
   }
