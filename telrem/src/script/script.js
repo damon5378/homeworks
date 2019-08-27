@@ -1,31 +1,43 @@
 window.addEventListener('DOMContentLoaded', function(){
     'use strict';
+new WOW().init();
+// const ourOffer = document.querySelector('.offer__image');
 
-const ourOffer = document.querySelector('.offer__image');
+//     let ourOfferFunction = (target) => {
+//       let defaultSrc = target.src;
+//       console.log('переменная с исходным src: ' + defaultSrc);
+//       target.src = target.dataset.img;
+//       console.log('новое значение src: ' + target.src);
+//       target.dataset.img = defaultSrc;
+//       console.log('новое значение data: ' + target.dataset.img);
+//     };
 
-    let ourOfferFunction = (target) => {
-      let defaultSrc = target.src;
-      console.log('переменная с исходным src: ' + defaultSrc);
-      target.src = target.dataset.img;
-      console.log('новое значение src: ' + target.src);
-      target.dataset.img = defaultSrc;
-      console.log('новое значение data: ' + target.dataset.img);
-    };
+//     ourOffer.addEventListener('mouseover', (event) => {
+//       let target = event.target;
 
-    ourOffer.addEventListener('mouseover', (event) => {
-      let target = event.target;
+//       if(target.matches('.sony')){
+//         ourOfferFunction(target);
+//       }
+//     });
+//     ourOffer.addEventListener('mouseout', (event) => {
+//       let target = event.target;
 
-      if(target.matches('.sony')){
-        ourOfferFunction(target);
-      }
+//       if(target.matches('.sony')){
+//         ourOfferFunction(target);
+//       }
+//     });
+
+    //Hamburger menu
+    $('.ham__menu').on('click', function(e){
+      e.PreventDefault;
+      $(this).toggleClass('ham__active');
     });
-    ourOffer.addEventListener('mouseout', (event) => {
-      let target = event.target;
 
-      if(target.matches('.sony')){
-        ourOfferFunction(target);
-      }
-    });
+    $('.ham__menu').on('click', function(event){
+        event.preventDefault;
+        $(this).toggleClass('ham_active');
+        $('.menu-nav').toggleClass('menu-nav_active')
+      });
 
     const tabs = () => {
       const tabHeader = document.querySelector('.service-header'),
@@ -65,11 +77,7 @@ const ourOffer = document.querySelector('.offer__image');
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 2000);
     });
-      $('.menu-btn').on('click', function(event){
-        event.preventDefault;
-        $(this).toggleClass('menu-btn_active');
-        $('.menu-nav').toggleClass('menu-nav_active')
-      });
+      
 
       //UpButton
 
