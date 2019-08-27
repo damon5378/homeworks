@@ -1,6 +1,7 @@
 .footer
 	position: relative
-	background: #db4453
+	// background: #db4453
+	background: url('../img/footer_bg.jpg')
 	color: #fff
 	padding: 40px 40px
 	&__wrapper
@@ -10,26 +11,45 @@
 		width: 300px
 	&__title
 		text-transform: uppercase
-.vk-center
+.socials
 	display: flex
-	justify-content: center
+	justify-content: space-around
+.vk
+	// margin-left: 20px
+	// margin-right: 50px
+.insta
+	width: 26px
+	height: 26px
 .phone
 	display: block
 	text-decoration: none
 	color: #fff
 	&:hover
-		text-decoration: none
+		color: red
 @media(max-width: 768px)
-	.hide-block
-		display: none
+	// .hide-block
+	// 	position: absolute
+	// 	top: 50%
+	// 	left: 50%
 	.footer
+		&__wrapper
+			column-count: 3
+		&__text
+			width: 170px
+		&__soc
+			text-align: center
+			margin-bottom: 30px
+	.soc
+		width: 300px
+	.footer h3, p, a
+		font-size: 16px
 		// &__title
 		// 	display: none
 	.move-block-social
-		position: absolute
-		top: 10%
-		left: 65%
-		transform: translate(-20%, 15%)
+		// position: absolute
+		// top: 10%
+		// left: 65%
+		// transform: translate(-20%, 15%)
 	.vk-center
 		margin-top: 30px
 @media(max-width: 576px)
